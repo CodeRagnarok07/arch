@@ -1,19 +1,14 @@
 import { ImageResponse } from "next/server";
-
-export const runtime = "edge";
-// Image metadata
-export const contentType = "image/png";
-const sizes = [
-  9, 10, 16, 24, 32, 48, 57, 58, 60, 62, 64, 70, 72, 76, 80, 96, 99, 114, 120,
-  128, 150, 152, 173, 180, 192, 200, 256, 310, 384, 512, 1024, 1800,
-];
+import IconPng from "./IconPng"
 
 export function generateImageMetadata() {
+  const sizes = [144, 192,384];
+
   const sizes_data = sizes.map((v) => {
     const data = {
-      contentType: "image/webp",
+      contentType: "image/png",
       size: { width: v, height: v },
-      id: `size_${v}x${v}`,
+      id: v,
     };
 
     return data;
@@ -22,23 +17,24 @@ export function generateImageMetadata() {
   return sizes_data;
 }
 
-export default function Icon() {
-  return new ImageResponse( // ImageResponse JSX element
+export default function Icon({ id }) {
+  const size = { width: id, height: id };
+
+  return new ImageResponse(
     (
-      <div
-      style={{
-        fontSize: 24,
-        background: "black",
-        width: "100%",
-        height: "100%",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        color: "white",
-      }}
-    >
-      🌀
-    </div>
+      // ImageResponse JSX element
+      <div style={{display:"flex"}}>
+
+      <IconPng/>
+      </div>
+
     ),
+
+    // ImageResponse options
+    {
+      // For convenience, we can re-use the exported icons size metadata
+      // config to also set the ImageResponse's width and height.
+      ...size,
+    }
   );
 }

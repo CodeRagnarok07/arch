@@ -1,16 +1,13 @@
-
-
-import img from '@/assets/icon.png'
+import IconPng from "./IconPng"
 
 
 export default function Home() {
-  console.log(img.src);
-
 
   return (
-    <div>
+    <div  className="h-screen w-full flex items-center justify-center flex-col">
       <h1>Hola mundo</h1>
+      <IconPng/>
     </div>
-    
+
   )
 }

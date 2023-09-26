@@ -10,17 +10,18 @@ export const size = {
 
 export const contentType = "image/png";
 
-const sizes = [
-2048,
-1668,
-1536,
-1125,
-1242,
-750,
-640,
-];
+
 
 export function generateImageMetadata() {
+  const sizes = [
+    2048,
+    1668,
+    1536,
+    1125,
+    1242,
+    750,
+    640,
+    ];
   const sizes_data = sizes.map((v) => {
     const data = {
       contentType: "image/png",
