@@ -1,26 +1,5 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
 # Pwa config
+
 
 Building a Next.js PWA:
 ### 3.1 Setting up a Next.js Project
@@ -89,3 +68,13 @@ This case study focuses on the creation of a Next.js PWA for a media streaming p
 ### 6.3 Case Study 3: Next.js PWA for Social Networking
 
 In this case study, the development of a Next.js PWA for a social networking platform is explored. It outlines the challenges faced in building real-time interactions, implementing push notifications, and ensuring scalability. The case study showcases how Next.js empowered the platform to deliver a seamless social networking experience.
+
+# pacages and config
+
+### [next-pwa](https://www.npmjs.com/package/next-pwa)
+
+
+### [generate manifest](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/manifest)
+
+### [Icons auto Generate](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/app-icons)
+#### [generate multiples](https://nextjs.org/docs/app/api-reference/functions/generate-image-metadata)
