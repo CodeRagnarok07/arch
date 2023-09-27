@@ -5,16 +5,10 @@ const headersList = headers();
 
 const referer = new URL(headersList.get("referer"))
 
-// https://nextjs.org/docs/app/building-your-application/optimizing/metadata
-const algo = <>
-  <meta name="msapplication-config" content="/browserconfig.xml" />
-  <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5" />
-  <link rel="shortcut icon" href="/favicon.ico" />
-</>
 
 
-const data = {
 
+const myData = {
   app_name: "angelfelipearch",
   author: "Angel Felipe",
   app_short_name: "ARCH",
@@ -24,25 +18,26 @@ const data = {
 
 
 export const metadata = {
-  title: data.app_short_name,
+  // https://nextjs.org/docs/app/building-your-application/optimizing/metadata
+  title: myData.app_short_name,
   metadataBase: referer,
   other: {
-    "apple-mobile-web-app-status-bar-style" : "default",
-    "apple-mobile-web-app-capable" : "yes",
-    "format-detection" : "telephone=no",
-    "mobile-web-app-capable" : "yes",
-    "msapplication-tap-highlight" : "no",
-    "msapplication-TileColor" : "#2B5797",
+    "apple-mobile-web-app-status-bar-style": "default",
+    "apple-mobile-web-app-capable": "yes",
+    "format-detection": "telephone=no",
+    "mobile-web-app-capable": "yes",
+    "msapplication-tap-highlight": "no",
+    "msapplication-TileColor": "#2B5797",
   },
-  description: data.description,
+  description: myData.description,
   generator: 'Next.js',
-  applicationName: data.app_short_name,
+  applicationName: myData.app_short_name,
   referrer: 'origin-when-cross-origin',
-  keywords: data.keywords,
+  keywords: myData.keywords,
   category: 'technology',
 
-  creator: data.author,
-  publisher: data.author,
+  creator: myData.author,
+  publisher: myData.author,
 
   colorScheme: 'dark',
   themeColor: [
@@ -59,7 +54,7 @@ export const metadata = {
     appId: 'myAppStoreID',
     appArgument: 'myAppArgument',
   },
-  
+
   // alternates: {
   //   canonical: 'https://nextjs.org',
   //   languages: {
@@ -74,10 +69,10 @@ export const metadata = {
   //   },
   // },
   openGraph: {
-    title: data.app_short_name,
-    description: data.description,
+    title: myData.app_short_name,
+    description: myData.description,
     url: 'https://nextjs.org',
-    siteName: data.app_short_name,
+    siteName: myData.app_short_name,
     type: 'website',
     locale: 'es-ES',
   },
@@ -161,17 +156,15 @@ export const metadata = {
 }
 
 
-const sizes = [
-  128, 
-  // 10, 16, 24, 32, 48, 57, 58, 60, 62, 64, 70, 72, 76, 80, 96, 99, 114, 120, 144,  128, 150, 152, 173, 180, 192, 200, 256, 310, 384, 512, 1024, 1800,
-];
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-            {/* statics */}
-          <meta name="msapplication-config" content="/browserconfig.xml" />
+        {/* statics */}
+        <meta name="msapplication-config" content="/browserconfig.xml" />
+        <link rel="mask-icon" href="/icons/icon.svg" color="#5bbad5" />
+        <link rel="shortcut icon" href="/icons/icon.svg" />
       </head>
       <body className={"bg-black text-white "}>{children}</body>
     </html>
