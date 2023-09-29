@@ -1,9 +1,17 @@
 import '@/styles/tailwind.css'
+import InstallPrompCustom from '@/components/Layout/InstallPrompCustom'
 import { headers } from 'next/headers';
+import BtnInstallPwa from '@/components/Layout/BtnInstallPwa';
 
 const headersList = headers();
 
-const referer = new URL(headersList.get("referer"))
+// headersList.forEach((v,k)=>{
+//   console.log(v,k);
+
+// })
+
+
+const referer = new URL("http://"+headersList.get("host"))
 
 
 
@@ -166,7 +174,11 @@ export default function RootLayout({ children }) {
         <link rel="mask-icon" href="/icons/icon.svg" color="#5bbad5" />
         <link rel="shortcut icon" href="/icons/icon.svg" />
       </head>
-      <body className={"bg-black text-white "}>{children}</body>
+      <body className={"bg-black text-white "}>{children}
+      
+      <BtnInstallPwa/>
+      </body>
+
     </html>
   )
 }

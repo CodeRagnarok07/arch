@@ -20,6 +20,9 @@ dependencies:
   next:
     specifier: 13.5.2
     version: 13.5.2(@babel/core@7.23.0)(react-dom@18.2.0)(react@18.2.0)
+  next-client-cookies:
+    specifier: ^1.0.3
+    version: 1.0.3(next@13.5.2)(react@18.2.0)
   next-pwa:
     specifier: ^5.6.0
     version: 5.6.0(@babel/core@7.23.0)(next@13.5.2)(webpack@5.88.2)
@@ -3375,6 +3378,11 @@ packages:
     hasBin: true
     dev: false
 
+  /js-cookie@3.0.5:
+    resolution: {integrity: sha512-cEiJEAEoIbWfCZYKWhVwFuvPX1gETRYPw6LlaTKoxD3s2AkXzkCjnp6h0V77ozyqj0jakteJ4YqDJT830+lVGw==}
+    engines: {node: '>=14'}
+    dev: false
+
   /js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
     dev: false
@@ -3646,6 +3654,17 @@ packages:
 
   /neo-async@2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
+    dev: false
+
+  /next-client-cookies@1.0.3(next@13.5.2)(react@18.2.0):
+    resolution: {integrity: sha512-9XgdzgxuGkxiA9VTYoIgqkbudp2PH/tVbbj1+cgTASQkVg/QwFFvunexjG2FF41mR1dE8AMpmB0wG0Hq1cgI6A==}
+    peerDependencies:
+      next: ^13.0.0
+      react: '>= 16.8.0'
+    dependencies:
+      js-cookie: 3.0.5
+      next: 13.5.2(@babel/core@7.23.0)(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
     dev: false
 
   /next-pwa@5.6.0(@babel/core@7.23.0)(next@13.5.2)(webpack@5.88.2):

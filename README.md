@@ -78,3 +78,7 @@ In this case study, the development of a Next.js PWA for a social networking pla
 
 ### [Icons auto Generate](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/app-icons)
 #### [generate multiples](https://nextjs.org/docs/app/api-reference/functions/generate-image-metadata)
+
+
+# [Installer pronter](https://medium.com/designly/creating-an-install-to-home-screen-prompt-in-a-next-js-progressive-web-app-588a3e7a6747)
+
