@@ -6,3 +6,9 @@
 html,body{
     min-height: 100dvh;
 }
+
+@font-face {
+    font-family: "tourner";
+    src: url("/fonts/tourner/Tourner.ttf");
+  }
+  

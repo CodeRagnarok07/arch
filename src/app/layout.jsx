@@ -1,5 +1,4 @@
 import '@/styles/tailwind.css'
-import InstallPrompCustom from '@/components/Layout/InstallPrompCustom'
 import { headers } from 'next/headers';
 import BtnInstallPwa from '@/components/Layout/BtnInstallPwa';
 
@@ -11,7 +10,7 @@ const headersList = headers();
 // })
 
 
-const referer = new URL("http://"+headersList.get("host"))
+const referer = new URL("http://" + headersList.get("host"))
 
 
 
@@ -163,7 +162,7 @@ export const metadata = {
   },
 }
 
-
+import MovilScroll from '@/components/lib/MovilScroll'
 
 export default function RootLayout({ children }) {
   return (
@@ -174,9 +173,11 @@ export default function RootLayout({ children }) {
         <link rel="mask-icon" href="/icons/icon.svg" color="#5bbad5" />
         <link rel="shortcut icon" href="/icons/icon.svg" />
       </head>
-      <body className={"bg-black text-white "}>{children}
-      
-      <BtnInstallPwa/>
+
+
+      <body className={"bg-black text-white "}>
+        {/* {children} */}
+        <MovilScroll />
       </body>
 
     </html>

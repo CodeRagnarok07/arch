@@ -1,5 +1,4 @@
 import { ImageResponse } from "next/server";
-import IconPng from "./IconPng";
 
 export function generateImageMetadata() {
   // const sizes = [ 128, 10, 16, 24, 32, 48, 57, 58, 60, 62, 64, 70, 72, 76, 80, 96, 99, 114, 120, 144,  128, 150, 152, 173, 180, 192, 200, 256, 310, 384, 512, 1024, 1800,];
