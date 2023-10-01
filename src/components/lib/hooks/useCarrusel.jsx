@@ -1,12 +1,9 @@
+"use client"
 import { useEffect, useRef, useState } from 'react';
 
 const useCarrusel = () => {
     const CarruselRef = useRef()
     const dotControlerRef = useRef()
-
-
-
-
     const [current, setCurrent] = useState(0)
     const Current = {
         state: current,
@@ -33,15 +30,9 @@ const useCarrusel = () => {
             } else {
                 slider.scrollLeft -= nextwidthSlider
                 setCurrent(current - 1)
-
-
             }
         }
-
     }
-
-
-
 
     useEffect(() => {
         if (CarruselRef.current.children[0]) {
@@ -92,7 +83,7 @@ const useCarrusel = () => {
             }
         }
 
-    }, [dotControlerRef.current])
+    }, [])
 
 
     return [CarruselRef, arrowControler, Current, dotControlerRef]

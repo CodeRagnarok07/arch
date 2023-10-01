@@ -19,6 +19,8 @@
 
 
   main {
+    position: relative;
+
     overflow: auto;
     max-height: 100vh;
     max-height: 100dvh;
@@ -34,6 +36,7 @@
       /* Hide scrollbar for Chrome, Safari and Opera */
       display: none;
     }
+
     -ms-overflow-style: none;
     scrollbar-width: none;
 
@@ -44,69 +47,26 @@
       scroll-snap-align: start;
       scroll-snap-stop: always;
 
-      &:nth-child(even) {
-        background-color: #424cda;
-      }
+      // &:nth-child(even) {
+      //   background-color: #424cda;
+      // }
 
-      &:nth-child(odd) {
-        background-color: #9a9b9c;
-      }
+      // &:nth-child(odd) {
+      //   background-color: #9a9b9c;
+      // }
     }
 
+    // &:nth-child(even) {
+    //   section {
+    //     &:nth-child(even) {
+    //       background-color: #3a5c53;
+    //     }
 
-    &:nth-child(even) {
-      section {
-        &:nth-child(even) {
-          background-color: #3a5c53;
-        }
-
-        &:nth-child(odd) {
-          background-color: #791432;
-        }
-      }
-    }
-
-
-
-  }
-
-
-
-
-
-}
-
-.otro {
-
-
-
-  overflow: auto;
-  overflow-x: hidden;
-  height: 100vh;
-  scroll-snap-points-y: repeat(100vh);
-  scroll-snap-type: y mandatory;
-  margin-right: -5px;
-
-  >section {
-    height: 100vh;
-    scroll-snap-align: start;
-    position: relative;
-  }
-
-  /* scroll bar style */
-  &::-webkit-scrollbar {
-    background: transparent;
-  }
-
-  &::-webkit-scrollbar-track {
-    /* border-radius: 100vh; */
-    background: transparent;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background: #282a44;
-    border-radius: 4rem;
-    border: 5px solid #000000;
-    width: 2px;
+    //     &:nth-child(odd) {
+    //       background-color: #791432;
+    //     }
+    //   }
+    // }
   }
 }
+

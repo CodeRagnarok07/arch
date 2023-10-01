@@ -1,0 +1,90 @@
+@-webkit-keyframes d { to {stroke-dashoffset: 0}}
+
+@-moz-keyframes d {to {stroke-dashoffset: 0}}
+
+@-ms-keyframes d {to {stroke-dashoffset: 0}}
+
+@-o-keyframes d {to {stroke-dashoffset: 0}}
+
+@keyframes d {to {stroke-dashoffset: 0}}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+        stroke-opacity: .5;
+    }
+}
+
+.bgCircuit {
+    g {
+        polyline,
+        path {
+            fill: none;
+            stroke: #2589fd;
+            stroke-opacity: 1;
+
+            stroke-dasharray: 100, 5, 200, 5;
+            stroke-dashoffset: 500;
+            stroke-width: .05rem;
+
+            -webkit-animation: draw 10000ms linear infinite;
+            -moz-animation: draw 10000ms linear infinite;
+            -ms-animation: draw 10000ms linear infinite;
+            -o-animation: draw 10000ms linear infinite;
+            animation: draw 10000ms linear infinite
+        }
+    }
+}
+
+
+.bgCircuit2 {
+    transform: scale(1.5);
+
+    z-index: -50;
+    position: absolute;
+    inset: 0;
+    transform: rotateX('45deg') ;
+    object-fit: contain;
+    object-position: center;
+    stroke-opacity: 0.3;
+    
+    g {
+        path{
+            stroke: #2589FD;
+        }
+        
+        &:nth-child(even) {
+            stroke-dasharray: 5 550;
+            stroke: #6ec5ff07;
+            stroke-width: 4;
+            path {
+                animation: draw 20s infinite;
+                animation-timing-function: linear;
+                stroke-dashoffset: 3000;
+                stroke-opacity: 0.7;
+                animation-duration: 50s;
+
+                &:nth-child(odd) {
+                    animation-delay: 1s;
+                    animation-duration: 20s;
+
+                }
+                &:nth-child(even) {
+                    animation-delay: 2s;
+
+                }
+            }
+        }
+    }
+
+
+
+    @keyframes draw {
+        0% {}
+
+        100% {
+            stroke-dashoffset: 0;
+            stroke-opacity: 1;
+        }
+    }
+}
