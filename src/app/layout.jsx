@@ -1,10 +1,10 @@
-import '@/styles/tailwind.css'
+import '../styles/tailwind.css'
 import { headers } from 'next/headers';
 import BtnInstallPwa from '@/components/Layout/BtnInstallPwa';
-import MovilScroll from '@/components/lib/MovilScroll'
+import MovilScroll from '@/components/Layout/MovilScroll'
 
 // fonts
-import { tourner } from '@/assets/fonts'
+import { tourner, lemonmilk } from '@/assets/fonts'
 
 // Metadata
 import { meta } from '@/consts'
@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
       </head>
 
 
-      <body className={`bg-[#030713] text-white ${tourner.variable}`}>
+      <body className={`bg-[#030713] text-white ${tourner.variable} ${lemonmilk.variable}`}>
         <MovilScroll >
             {children}
         </MovilScroll>

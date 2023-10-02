@@ -6,38 +6,93 @@
 html,
 body {
     min-height: 100dvh;
+    min-width: min-content;
+
+    width: 100%;
 }
 
 @font-face {
     font-family: "tourner";
-    src: url("/fonts/tourner/Tourner.ttf");
+    src:
+        local("/fonts/tourner/Tourner.woff2")format('woff2'),
+        local("/fonts/tourner/Tourner.woff")format('woff'),
+        local("/fonts/tourner/Tourner.ttf")format('ttf'),
+
+    ;
+}
+
+@font-face {
+    font-family: "lemon-milk";
+    src: local('/fonts/lemon_milk/LEMONMILK-Bold.woff2', );
+    weight: '700';
+    style: 'normal';
+}
+
+@font-face {
+    font-family: "lemon-milk";
+    src: local('/fonts/lemon_milk/LEMONMILK-Medium.woff2', );
+    weight: '400';
+    style: 'normal';
+}
+
+@font-face {
+    font-family: "lemon-milk";    
+    src: local('/fonts/lemon_milk/LEMONMILK-Regular.woff2', );
+    weight: '500';
+    style: 'normal';
+}
+
+
+@font-face {
+    font-family: "lemon-milk";
+    src: local('/fonts/lemon_milk/LEMONMILK-Light.woff2', );
+    weight: '300';
+    style: 'normal';
 }
 
 
 
-@keyframes blink {
+.font-tourner {
+    font-family: "tourner";
+}
 
-    100%,
-    0% {
-        fill: linear-gradient(180deg, #0A24ED 0%, #0B9EFD 100%);
-    }
+.font-lemonmilk {
+    font-family: "lemon-milk";
 
-    50% {
-        fill: #0A24ED;
-
-    }
 }
 
 
-.container{
-    width: 80%;
+
+
+.container {
+    width: 100%;
     margin: 0 auto;
 }
 
-section{
-    background-position-x: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+section {
+    margin-top: 2rem;
+    min-height: 100dvh;
+    min-width: min-content;
+    width: 100%;
+    
+
+    /* padding: 1rem 1rem; */
 }
 
 
+/* BACKGROUNDS */
+.bg1{
+    background-image: url("@/assets/img/bg/bg1.png");
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+@media (min-width:650px) {
+    .bg1{
+    background-size: cover;
+
+    }
+    
+}

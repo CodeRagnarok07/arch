@@ -3,13 +3,13 @@ import Hero from "@/components/pages/Hero";
 
 import bg2 from "@/assets/img/bg/bg2.png";
 import bg3 from "@/assets/img/bg/bg3.png";
-
 import Bg1 from "@/components/Backgrounds/bg1";
+import MovilScroll from '@/components/Layout/MovilScroll'
 
 
 export default function Home() {
   return (
-    <>
+    <MovilScroll>
 
       <main id="home" >
 
@@ -50,7 +50,7 @@ export default function Home() {
       </main>
       <main id="contact"> </main>
 
-    </>
+    </MovilScroll>
 
   )
 }

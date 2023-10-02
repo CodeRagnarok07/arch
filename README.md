@@ -1,3 +1,22 @@
+# packages and config
+
+# [Add Vite To next.js](https://www.freakyjolly.com/vite-and-next-js-for-building-faster-web-apps/)
+
+
+### [next-pwa](https://www.npmjs.com/package/next-pwa)
+
+
+### [generate manifest](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/manifest)
+
+### [Icons auto Generate](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/app-icons)
+#### [generate multiples](https://nextjs.org/docs/app/api-reference/functions/generate-image-metadata)
+
+
+# [Installer pronter](https://medium.com/designly/creating-an-install-to-home-screen-prompt-in-a-next-js-progressive-web-app-588a3e7a6747)
+
+
+
+
 # Pwa config
 
 
@@ -68,17 +87,4 @@ This case study focuses on the creation of a Next.js PWA for a media streaming p
 ### 6.3 Case Study 3: Next.js PWA for Social Networking
 
 In this case study, the development of a Next.js PWA for a social networking platform is explored. It outlines the challenges faced in building real-time interactions, implementing push notifications, and ensuring scalability. The case study showcases how Next.js empowered the platform to deliver a seamless social networking experience.
-
-# pacages and config
-
-### [next-pwa](https://www.npmjs.com/package/next-pwa)
-
-
-### [generate manifest](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/manifest)
-
-### [Icons auto Generate](https://nextjs.org/docs/app/api-reference/file-conventions/metadata/app-icons)
-#### [generate multiples](https://nextjs.org/docs/app/api-reference/functions/generate-image-metadata)
-
-
-# [Installer pronter](https://medium.com/designly/creating-an-install-to-home-screen-prompt-in-a-next-js-progressive-web-app-588a3e7a6747)
 

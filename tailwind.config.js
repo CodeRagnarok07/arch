@@ -9,12 +9,18 @@ module.exports = {
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       fontFamily: {
         tourner: ['var(--font-tourner)'],
+        lemonmilk: ["var(--font-lemonmilk)"]
       },
+    },
+    screens: {
+
+
+      'xs': '320px',
+      // => @media (min-width: 1280px) { ... }
     },
   },
   plugins: [],

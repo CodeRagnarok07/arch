@@ -1,0 +1,9 @@
+@keyframes blink {
+    100%,
+    0% {
+        fill: linear-gradient(180deg, #0A24ED 0%, #0B9EFD 100%);
+    }
+    50% {
+        fill: #0A24ED;
+    }
+}
