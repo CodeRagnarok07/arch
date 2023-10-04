@@ -1,10 +1,11 @@
 "use client"
 
+import Frame from './Frame'
+
 export default function Hero() {
 
 
-    return <section className="bg1" >
-
+    return <section className="bg1 h-full flex flex-col justify-around" >
         <header className="text-center mt-8 ">
             <div className="w-min mx-auto flex flex-col items-center">
                 <h1 className='font-tourner tracking-[.34rem] leading-none text-[3.5rem] '>
@@ -21,6 +22,7 @@ export default function Hero() {
             </div>
         </header>
 
+        <Frame></Frame>
 
 
 

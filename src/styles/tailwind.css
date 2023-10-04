@@ -70,19 +70,35 @@ body {
 }
 
 section {
-    margin-top: 2rem;
+    padding-bottom: 10%;
     min-height: 100dvh;
     min-width: min-content;
     width: 100%;
     
+}
 
-    /* padding: 1rem 1rem; */
+header.header{
+    text-align: center;
 }
 
 
 /* BACKGROUNDS */
 .bg1{
-    background-image: url("@/assets/img/bg/bg1.png");
+    background-image: url("/src/assets/img/bg/bg1.png");
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bg2{
+    background-image: url("/src/assets/img/bg/bg2.png");
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bg3{
+    background-image: url("/src/assets/img/bg/bg3.png");
     background-position-x: center;
     background-repeat: no-repeat;
     background-size: contain;

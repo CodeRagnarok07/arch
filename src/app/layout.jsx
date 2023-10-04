@@ -1,13 +1,13 @@
 import '../styles/tailwind.css'
 import { headers } from 'next/headers';
-import BtnInstallPwa from '@/components/Layout/BtnInstallPwa';
-import MovilScroll from '@/components/Layout/MovilScroll'
+import BtnInstallPwa from '/src/components/Layout/BtnInstallPwa';
+import MovilScroll from '/src/components/Layout/MovilScroll'
 
 // fonts
-import { tourner, lemonmilk } from '@/assets/fonts'
+import { tourner, lemonmilk } from '/src/assets/fonts'
 
 // Metadata
-import { meta } from '@/consts'
+import { meta } from '/src/consts'
 const headersList = headers();
 meta.metadataBase = new URL("http://" + headersList.get("host"))
 export const metadata = meta
@@ -26,9 +26,7 @@ export default function RootLayout({ children }) {
 
 
       <body className={`bg-[#030713] text-white ${tourner.variable} ${lemonmilk.variable}`}>
-        <MovilScroll >
             {children}
-        </MovilScroll>
       </body>
 
     </html>

@@ -88,3 +88,5 @@ This case study focuses on the creation of a Next.js PWA for a media streaming p
 
 In this case study, the development of a Next.js PWA for a social networking platform is explored. It outlines the challenges faced in building real-time interactions, implementing push notifications, and ensuring scalability. The case study showcases how Next.js empowered the platform to deliver a seamless social networking experience.
 
+
+
