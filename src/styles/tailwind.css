@@ -93,6 +93,7 @@ header.header{
 .bg2{
     background-image: url("/src/assets/img/bg/bg2.png");
     background-position-x: center;
+    background-position-y: center;
     background-repeat: no-repeat;
     background-size: contain;
 }

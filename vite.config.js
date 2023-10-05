@@ -6,7 +6,7 @@ import path from "path";
  * @type {import('vite').UserConfig}
  */
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react({include: "**/*.jsx",})],
   resolve: {
     alias: {
       'src': path.resolve(__dirname, './src'),

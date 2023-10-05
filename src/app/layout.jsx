@@ -1,7 +1,7 @@
 import '../styles/tailwind.css'
 import { headers } from 'next/headers';
 import BtnInstallPwa from '/src/components/Layout/BtnInstallPwa';
-import MovilScroll from '/src/components/Layout/MovilScroll'
+import MovilScroll from '../lib/MovilScroll'
 
 // fonts
 import { tourner, lemonmilk } from '/src/assets/fonts'

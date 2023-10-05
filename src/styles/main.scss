@@ -2,32 +2,17 @@
 
 
 
-.slider_grid {
-    --grid: 1;
-    --grid-md: 1;
-    --gap: 0px;
-
+.bg-gradient-1{
+    
     position: relative;
+    z-index: 2;
+    &::before{
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background: linear-gradient(180deg, rgba(0, 94, 148, 0.60) -157.8%, rgba(5, 78, 121, 0.60) 3.32%, rgba(5, 78, 121, 0.00) 100%);
 
-    overflow: hidden;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: calc((100% - (var(--grid) - 1)*var(--gap))/var(--grid));
-    grid-gap: var(--gap);
-
-    height: 100%;
-
-
-
-
-    >*{
-        width: 100%;
-        min-width: min-content;
     }
-
+    
 }

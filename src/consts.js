@@ -147,3 +147,6 @@ export const meta = {
         },
     },
 }
+
+// define scroll y or pages
+export const pages =[ "home", "about", "services", "portfolio", "contact" ]
