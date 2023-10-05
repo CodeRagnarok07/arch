@@ -1,0 +1,91 @@
+// *** COLORS
+
+$primary: #005E94;
+$primary-light: rgba(0, 94, 148, 0.2);
+
+$secondary: #6E36E5;
+$secondary-light: #fff;
+
+$blue: #0090f9;
+$blue-light: #fff;
+
+$danger: #B7455A;
+$danger-light: #fff;
+
+
+
+
+
+.border-primary {
+    border: 0.75px solid $primary;
+    box-shadow: 0px 0px 15px 0px $primary;
+}
+
+.border-blue {
+    border: 0.75px solid $blue;
+    box-shadow: 0px 0px 15px 0px $blue;
+}
+
+.border-danger {
+    border: 0.75px solid $danger;
+    box-shadow: 0px 0px 15px 0px $danger;
+}
+
+.border-secondary {
+    border: 0.75px solid $secondary;
+    box-shadow: 0px 0px 15px 0px $secondary;
+}
+
+
+.btn {
+    display: flex;
+    border-radius: 1.25rem;
+    padding: 0.125rem 0.5rem 0.20rem;
+
+    color: #FFF;
+    font-family: Inter;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1;
+
+}
+
+input,
+textarea {
+    &.btn {
+        padding: 0.25rem .75rem;
+        color: rgba(255, 255, 255, 0.50);
+        font-family: Inter;
+        font-size: 0.75rem;
+        font-style: italic;
+        font-weight: 900;
+        line-height: normal;
+    }
+}
+
+textarea{
+    &::-webkit-scrollbar {
+        background: transparent;
+        width: 10px;
+        cursor: pointer;
+        position: relative;
+        z-index: 100;
+
+    }
+    
+    &::-webkit-scrollbar-track {
+        border-radius: 100vh;
+        background: transparent;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background: #282a44;
+        border-radius: 100vh;
+        border: 1px solid #000000;
+    }
+
+    &::-webkit-scrollbar-corner{
+        background: transparent;
+
+    }
+}

@@ -46,8 +46,7 @@ export default function NavbarMovil() {
 
           
 
-            <div className="flex items-center justify-around py-8">
-
+            <div className="flex items-center justify-around py-6">
                 {pages.map((v, k) => (
                     <div key={k}
                         className='text-[0.65rem] border-b-2 rounded-sm flex flex-col
@@ -56,9 +55,6 @@ export default function NavbarMovil() {
                         <img className='h-6 w-6' src={`/src/assets/svg/nav/${v}.svg`} alt="" />
                         {v}
                     </div>
-
-
-
                 ))}
             </div>
         </nav>

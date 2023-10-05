@@ -1,0 +1,35 @@
+
+/* BACKGROUNDS */
+.bg1{
+    background-image: url("/src/assets/img/bg/bg1.png");
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bg2{
+    background-image: url("/src/assets/img/bg/bg2.png");
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bg3{
+    background-image: url("/src/assets/img/bg/bg3.png");
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+
+
+@media (min-width:650px) {
+    .bg1{
+    background-size: cover;
+
+    }
+    
+}
+

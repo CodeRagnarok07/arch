@@ -10,7 +10,7 @@ const desc =" Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
  */
 export default function Section({title="titulo", description=desc, bg="bg1", children}){
 
-    return <section className={"py-16 flex flex-col  gap-12 "  + bg}>
+    return <section className={"pb-20 pt-8 flex flex-col  gap-12 "  + bg}>
     <header className="header">
         <div className="w-min mx-auto flex flex-col items-center px-8">
             <h2 className='font-tourner tracking-[.34rem]  text-[2rem] '>
@@ -20,7 +20,7 @@ export default function Section({title="titulo", description=desc, bg="bg1", chi
                 <path d="M250.376 0.833008L427.153 1.1259L500.376 1.83301L427.153 2.54011L250.376 2.83301L73.5995 2.54011L0.376221 1.83301L73.5995 1.1259L250.376 0.833008Z" fill="white" />
             </svg>
 
-            <p className="mt-3">
+            <p className="mt-2">
                {description}
             </p>
         </div>
