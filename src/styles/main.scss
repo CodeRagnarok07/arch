@@ -2,3 +2,32 @@
 
 
 
+.slider_grid {
+    --grid: 1;
+    --grid-md: 1;
+    --gap: 0px;
+
+    position: relative;
+
+    overflow: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% - (var(--grid) - 1)*var(--gap))/var(--grid));
+    grid-gap: var(--gap);
+
+    height: 100%;
+
+
+
+
+    >*{
+        width: 100%;
+        min-width: min-content;
+    }
+
+}
