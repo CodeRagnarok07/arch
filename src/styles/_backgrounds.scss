@@ -16,11 +16,20 @@
 }
 
 .bg3{
-    background-image: url("/src/assets/img/bg/bg3.png");
-    background-position-x: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background-image: url("/src/assets/img/bg/bg3.png");
+        background-position-x: center;
+        background-position-y: center;
+        opacity: 0.5;
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: scale(1.5);
+    }
 }
 
 

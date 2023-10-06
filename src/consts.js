@@ -64,34 +64,21 @@ export const meta = {
     openGraph: {
         title: myData.app_short_name,
         description: myData.description,
-        url: 'https://nextjs.org',
+        // url: 'https://nextjs.org',
         siteName: myData.app_short_name,
         type: 'website',
         locale: 'es-ES',
     },
     twitter: {
-        card: 'app',
-        title: 'Next.js',
-        description: 'The React Framework for the Web',
+        card: myData.app_short_name,
+        title: myData.app_short_name,
+        description: myData.description,
+        // url: 'https://nextjs.org',
+
         siteId: '1467726470533754880',
-        creator: '@nextjs',
+        creator: 'Angel Riera',
         creatorId: '1467726470533754880',
-        images: {
-            url: '/icons/icon.png',
-            alt: 'Next.js Logo',
-        },
-        app: {
-            name: 'twitter_app',
-            id: {
-                iphone: 'twitter_app://iphone',
-                ipad: 'twitter_app://ipad',
-                googleplay: 'twitter_app://googleplay',
-            },
-            url: {
-                iphone: 'https://iphone_url',
-                ipad: 'https://ipad_url',
-            },
-        },
+  
     },
     robots: {
         index: false,
@@ -125,28 +112,66 @@ export const meta = {
         title: 'Apple Web App',
         statusBarStyle: 'black-translucent',
         startupImage: [
-            '/assets/startup/apple-touch-startup-image-768x1004.png',
+            'icons/public/icons/icon-768x1004.png', // image-768x1004.png', //
             {
-                url: '/assets/startup/apple-touch-startup-image-1536x2008.png',
+                url: 'icons/public/icons/icon-1536x2008.png', // image-1536x2008.png
                 media: '(device-width: 768px) and (device-height: 1024px)',
             },
         ],
     },
-    appLinks: {
-        ios: {
-            url: 'https://nextjs.org/ios',
-            app_store_id: 'app_store_id',
-        },
-        android: {
-            package: 'com.example.android/package',
-            app_name: 'app_name_android',
-        },
-        web: {
-            url: 'https://nextjs.org/web',
-            should_fallback: true,
-        },
-    },
+    // appLinks: {
+    //     ios: {
+    //         url: 'https://nextjs.org/ios',
+    //         app_store_id: 'app_store_id',
+    //     },
+    //     android: {
+    //         package: 'com.example.android/package',
+    //         app_name: 'app_name_android',
+    //     },
+    //     web: {
+    //         url: 'https://nextjs.org/web',
+    //         should_fallback: true,
+    //     },
+    // },
 }
 
 // define scroll y or pages
 export const pages =[ "home", "about", "services", "portfolio", "contact" ]
+
+export const socials = [
+    {
+        name: "discord",
+        link: "#",
+        icon: "/src/assets/svg/socials/discord.svg"
+    },
+    {
+        name: "facebook",
+        link: "#",
+        icon: "/src/assets/svg/socials/facebook.svg"
+    },
+    {
+        name: "ig",
+        link: "#",
+        icon: "/src/assets/svg/socials/ig.svg"
+    },
+    {
+        name: "tiktok",
+        link: "#",
+        icon: "/src/assets/svg/socials/tiktok.svg"
+    },
+    {
+        name: "twicht",
+        link: "#",
+        icon: "/src/assets/svg/socials/twicht.svg"
+    },
+    {
+        name: "twitter",
+        link: "#",
+        icon: "/src/assets/svg/socials/twitter.svg"
+    },
+    {
+        name: "youtube",
+        link: "#",
+        icon: "/src/assets/svg/socials/youtube.svg"
+    },
+]

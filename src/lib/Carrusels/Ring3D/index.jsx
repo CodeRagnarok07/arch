@@ -27,7 +27,6 @@ const MyComponent = ({ data, setCurrent, current }) => {
             setCurrent(current + 1)
 
             if(current !== 0){
-
                 children[current-1].children[0].classList.toggle("active")
             }
             children[current].children[0].classList.toggle("active")
@@ -44,6 +43,7 @@ const MyComponent = ({ data, setCurrent, current }) => {
                 handleSlider(true)
             }, 500)
         }
+        console.log(CurrentDeg);
     }, [sliderRef])
 
 
@@ -54,9 +54,8 @@ const MyComponent = ({ data, setCurrent, current }) => {
         <div ref={sliderRef} className={styles.slider_cont} >
             {data.map((v, k) => (
                 <i style={{ "--i": k + 1 }} key={k} >
-                    <div className="border-gradient-rounded">
-                        {v.icon}
-                    </div>
+                        <img className='w-full' src={v.icon} alt="" />
+                        
                 </i>
             ))}
 

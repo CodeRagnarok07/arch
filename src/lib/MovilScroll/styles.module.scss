@@ -24,6 +24,9 @@
     max-height: 100vh;
     max-height: 100dvh;
     width: 100%;
+
+    max-width: 100dvw;
+
     display: flex;
     flex-shrink: 0;
     scroll-snap-align: start;
@@ -38,13 +41,18 @@
 
     -ms-overflow-style: none;
     scrollbar-width: none;
+    overflow-x: hidden;
+
 
     section {
       min-height: 100dvh;
-      width: 100%;
+      width: 100dvw;
 
-      scroll-snap-align: start;
+      max-width: 100dvw;
+
+      scroll-snap-align: center;
       scroll-snap-stop: always;
+      overflow-x: hidden;
 
       // &:nth-child(even) {
       //   background-color: #424cda;
@@ -68,4 +76,3 @@
     // }
   }
 }
-

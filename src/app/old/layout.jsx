@@ -1,5 +1,5 @@
 import './globals.css'
-import '@/styles/tailwind.css'
+import '/src/styles/tailwind.css'
 
 import { Inter } from 'next/font/google'
 

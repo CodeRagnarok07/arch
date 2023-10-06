@@ -1,8 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-
 import style from './styles.module.scss'
-
-
 
 // export const Carrusel = ({ children }) => {
 //     return (<div className='slider_grid'  >{children}</div>)
@@ -111,7 +108,7 @@ const useCarrusel = () => {
             }
         }
 
-    }, [dotControlerRef.current])
+    }, [])
 
 
 

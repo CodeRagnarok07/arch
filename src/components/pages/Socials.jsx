@@ -1,45 +1,9 @@
 import Section from "./Sections";
-
+import {socials} from '/src/consts'
 
 export default function Socials() {
 
-    const Socials_Icons = [
-        {
-            name: "discord",
-            link: "#",
-            icon: ""
-        },
-        {
-            name: "facebook",
-            link: "#",
-            icon: ""
-        },
-        {
-            name: "ig",
-            link: "#",
-            icon: ""
-        },
-        {
-            name: "tiktok",
-            link: "#",
-            icon: ""
-        },
-        {
-            name: "twicht",
-            link: "#",
-            icon: ""
-        },
-        {
-            name: "twitter",
-            link: "#",
-            icon: ""
-        },
-        {
-            name: "youtube",
-            link: "#",
-            icon: ""
-        },
-    ]
+    
 
     return <section className={"pb-20 pt-8 flex flex-col  gap-12 bg1 justify-center "}>
 
@@ -49,9 +13,9 @@ export default function Socials() {
         <div className="grid place-items-center  ">
             <div className="flex gap-3 flex-wrap justify-center w-3/5">
 
-                {Socials_Icons.map((v, k) => (
+                {socials.map((v, k) => (
                     <div key={k}>
-                        <img src={`/src/assets/svg/socials/${v.name}.svg`} alt="" />
+                        <img src={v.icon} alt="" />
                     </div>
                 ))}
             </div>

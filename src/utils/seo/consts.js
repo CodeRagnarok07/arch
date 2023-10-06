@@ -32,7 +32,7 @@ export const seoData = {
     {name: "title", content:  "PWA App"},
     {name: "description", content:  "Best PWA App in the world"},
     {name: "site_name", content:  "PWA App"},
-    {name: "url", content:  "/"},
+    // {name: "url", content:  "/"},
     {name: "image", content:  "/favicon.icon"}
   ]
 }
