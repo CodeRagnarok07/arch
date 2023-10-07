@@ -1,19 +1,20 @@
 import '/src/styles/main.scss'
 import '/src/styles/tailwind.css'
-// import { headers } from 'next/headers';
 
 // fonts
 import { tourner, lemonmilk } from '/src/assets/fonts'
-
+import meta from './meta'
 // Metadata
-import { meta } from '/src/consts'
-// const headersList = headers();
-// meta.metadataBase = new URL("http://" + headersList.get("host"))
 
-export const metadata = {
-  title: 'arch',
-  description: 'Portfolio desarrollador y diseñador web grothHaker',
-}
+// export const metadata = {
+//   title: 'arch',
+//   description: 'Portfolio desarrollador y diseñador web grothHaker',
+// }
+
+
+
+export const metadata = await meta()
+
 
 
 export default function RootLayout({ children }) {

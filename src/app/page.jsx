@@ -10,6 +10,7 @@ import NavbarMovil from "/src/components/Layout/NavbarMovil";
 
 export default function App() {
     return (
+        
         <MovilScroll>
 
             <main>

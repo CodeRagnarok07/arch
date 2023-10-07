@@ -14,14 +14,7 @@ export const meta = {
     // https://nextjs.org/docs/app/building-your-application/optimizing/metadata
     title: myData.app_short_name,
     metadataBase: "referer",
-    other: {
-        "apple-mobile-web-app-status-bar-style": "default",
-        "apple-mobile-web-app-capable": "yes",
-        "format-detection": "telephone=no",
-        "mobile-web-app-capable": "yes",
-        "msapplication-tap-highlight": "no",
-        "msapplication-TileColor": "#2B5797",
-    },
+
     description: myData.description,
     generator: 'Next.js',
     applicationName: myData.app_short_name,
@@ -78,7 +71,7 @@ export const meta = {
         siteId: '1467726470533754880',
         creator: 'Angel Riera',
         creatorId: '1467726470533754880',
-  
+
     },
     robots: {
         index: false,
@@ -103,9 +96,15 @@ export const meta = {
         google: 'google',
         yandex: 'yandex',
         yahoo: 'yahoo',
-        other: {
-            me: ['my-email', 'my-link'],
+        other:{
+            "apple-mobile-web-app-status-bar-style": "default",
+            "apple-mobile-web-app-capable": "yes",
+            "format-detection": "telephone=no",
+            "mobile-web-app-capable": "yes",
+            "msapplication-tap-highlight": "no",
+            "msapplication-TileColor": "#2B5797",
         },
+
     },
 
     appleWebApp: {
@@ -136,7 +135,7 @@ export const meta = {
 }
 
 // define scroll y or pages
-export const pages =[ "home", "about", "services", "portfolio", "contact" ]
+export const pages = ["home", "about", "services", "portfolio", "contact"]
 
 export const socials = [
     {
