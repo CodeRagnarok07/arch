@@ -10,11 +10,11 @@ export default function Skills() {
 
     const {CarruselRef, dotControlerRef } = useCarrusel()
     const img_webs = [
-        "/src/assets/img/hero/web-1.png",
-        "/src/assets/img/hero/web-2.png",
-        "/src/assets/img/hero/web-3.png",
-        "/src/assets/img/hero/web-4.png",
-        "/src/assets/img/hero/web-5.png",
+        "/assets/img/hero/web-1.png",
+        "/assets/img/hero/web-2.png",
+        "/assets/img/hero/web-3.png",
+        "/assets/img/hero/web-4.png",
+        "/assets/img/hero/web-5.png",
     ]
 
 

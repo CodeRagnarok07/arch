@@ -1,11 +1,10 @@
 "use client"
-import Section from "./Sections"
-import Ring3D from '/src/lib/Carrusels/Ring3D'
-import { useState } from 'react';
+import { useState } from "react";
+import Section from "../Sections"
+import Ring3D from './Ring3D'
 import { socials } from "/src/consts";
 
 export default function Hero({ bg }) {
-
     const [current, setCurrent] = useState()
 
 

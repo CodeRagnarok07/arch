@@ -11,9 +11,6 @@ import styles from './styles.module.scss'
 export default function MovilScroll({children}) {
 
     return <div className={styles.navigator}>
-        <>
-        {children}
-        </>
-    
+        <>{children}</>
     </div>
 }

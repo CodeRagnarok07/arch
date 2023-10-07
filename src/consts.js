@@ -142,36 +142,36 @@ export const socials = [
     {
         name: "discord",
         link: "#",
-        icon: "/src/assets/svg/socials/discord.svg"
+        icon: "/assets/svg/socials/discord.svg"
     },
     {
         name: "facebook",
         link: "#",
-        icon: "/src/assets/svg/socials/facebook.svg"
+        icon: "/assets/svg/socials/facebook.svg"
     },
     {
         name: "ig",
         link: "#",
-        icon: "/src/assets/svg/socials/ig.svg"
+        icon: "/assets/svg/socials/ig.svg"
     },
     {
         name: "tiktok",
         link: "#",
-        icon: "/src/assets/svg/socials/tiktok.svg"
+        icon: "/assets/svg/socials/tiktok.svg"
     },
     {
         name: "twicht",
         link: "#",
-        icon: "/src/assets/svg/socials/twicht.svg"
+        icon: "/assets/svg/socials/twicht.svg"
     },
     {
         name: "twitter",
         link: "#",
-        icon: "/src/assets/svg/socials/twitter.svg"
+        icon: "/assets/svg/socials/twitter.svg"
     },
     {
         name: "youtube",
         link: "#",
-        icon: "/src/assets/svg/socials/youtube.svg"
+        icon: "/assets/svg/socials/youtube.svg"
     },
 ]
