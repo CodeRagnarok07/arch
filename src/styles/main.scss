@@ -31,3 +31,20 @@
 }
 
 
+.border-blur{
+    position: relative;
+
+    &::after {
+
+        z-index: 10;
+
+        content: "asdsad";
+        position: absolute;
+        inset: 10%;
+        // border-radius: 50%;
+        background-image: url("/assets/Desarrollador_web.JPG");
+        box-shadow: 0 0 30px 30px rgba(245, 245, 245, 0.336) inset;
+        opacity: 0.8;
+    }
+}
+

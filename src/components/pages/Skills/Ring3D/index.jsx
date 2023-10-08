@@ -13,10 +13,10 @@ const MyComponent = ({ data, setCurrent, current }) => {
     const handleSlider = (bool) => {
         const children = sliderRef.current.children
         if (bool) {
-            sliderRef.current.style.transform = `perspective(500px) rotateX(-20deg) rotateY(${CurrentDeg - grados}deg)`
+            sliderRef.current.style.transform = `perspective(500px) rotateX(-15deg) rotateY(${CurrentDeg - grados}deg)`
             setCurrentDeg(CurrentDeg - grados)
         } else {
-            sliderRef.current.style.transform = `perspective(500px) rotateX(-20deg) rotateY(${CurrentDeg + grados}deg)`
+            sliderRef.current.style.transform = `perspective(500px) rotateX(-15deg) rotateY(${CurrentDeg + grados}deg)`
             setCurrentDeg(CurrentDeg + grados)
 
         }
