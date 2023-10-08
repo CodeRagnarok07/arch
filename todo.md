@@ -17,4 +17,10 @@
   - [ ] zoom
   - [ ] api to potfolio
 - [ ] Contacto working
-- [ ] 
+
+
+- [ ] SEO
+  - [ ] imagens
+    - [ ] blur
+    - [ ] ALts
+    - [ ] 

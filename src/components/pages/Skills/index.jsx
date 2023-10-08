@@ -10,5 +10,24 @@ export default function Hero({ bg }) {
 
     return <Section bg="bg3" title="Skills" desciption="Puede agendar un cita y asesorarte gratuita y personalmente">
         <Ring3D data={socials} current={current} setCurrent={setCurrent} />
+
+        <div className="container ">
+            <div className="text-center ">
+
+                <h3 className="font-tourner text-[1rem] mb-1">Elemento</h3>
+                <div className="box-shadow-special ">
+                    <p className="flex px-4 py-1">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam quasi nobis dolore similique deserunt corrupti voluptatum,
+                    </p>
+                </div>
+
+                <div className="flex gap-4 justify-center mt-2">
+                    <div className="btn border-primary">ver mas</div>
+                    <div className="btn border-secondary">ver mas</div>
+                </div>
+            </div>
+
+        </div>
+
     </Section>
 }

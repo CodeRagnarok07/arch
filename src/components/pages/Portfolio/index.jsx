@@ -37,6 +37,17 @@ export default function Skills() {
 
 
             </div>
+
+            <div className="box-shadow-special w-min px-8 mx-auto ">
+                <div className="selector">
+                    <div />
+                    <div className="active" />
+                    <div />
+                    <div />
+                </div>
+            </div>
+                    
+            
         </div>
 
 

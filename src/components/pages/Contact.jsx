@@ -20,8 +20,6 @@ export default function Contacto() {
                 </form>
             </div>
 
-
-
         </Section>
 
     )

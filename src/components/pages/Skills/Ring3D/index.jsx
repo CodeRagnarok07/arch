@@ -55,7 +55,7 @@ const MyComponent = ({ data, setCurrent, current }) => {
 
         <div ref={sliderRef} className={styles.slider_cont} >
             {data.map((v, k) => (
-                <i style={{ "--i": k + 1 }} key={k} >
+                <i className='bg-black rounded-full' style={{ "--i": k + 1 }} key={k} >
                         <img className='w-full' src={v.icon} alt="" />                        
                 </i>
             ))}

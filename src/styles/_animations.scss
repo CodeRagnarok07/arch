@@ -39,20 +39,18 @@
     }
 
     @keyframes floating {
-        0% {
-            -webkit-transform: translate(random($move)+px, random($move)+px) rotate(-15deg);
-            transform: translate(random($move)+px, random($move)+px) rotate(-15deg);
+        0%,100% {
+            -webkit-transform: translate(random($move)+px, random($move)+px) rotate(-10deg);
+            transform: translate(random($move)+px, random($move)+px) rotate(-10deg);
         }
 
         50% {
-            -webkit-transform: translate(random($move)+px, random($move)+px) rotate(0deg);
-            transform: translate(random($move)+px, random($move)+px) rotate(0deg);
+           
+            -webkit-transform: translate(random($move)+px, random($move)+px) rotate(10deg);
+            transform: translate(random($move)+px, random($move)+px) rotate(10deg);
         }
 
-        100% {
-            -webkit-transform: translate(random($move)+px, random($move)+px) rotate(15deg);
-            transform: translate(random($move)+px, random($move)+px) rotate(15deg);
-        }
+       
     }
 }
 

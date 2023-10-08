@@ -53,6 +53,7 @@ body {
 
 .font-tourner {
     font-family: "tourner";
+    letter-spacing: .34rem/* 5.44px */
 }
 
 .font-lemonmilk {

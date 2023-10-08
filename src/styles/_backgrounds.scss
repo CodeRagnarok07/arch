@@ -1,44 +1,55 @@
- 
-/* BACKGROUNDS */
-.bg1{
-    background-image: url('/assets/img/bg/bg1.png');
-    background-position-x: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
+ /* BACKGROUNDS */
+ .bg1 {
+     background-image: url('/assets/img/bg/bg1.png');
+     background-position-x: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+ }
 
-.bg2{
-    background-image: url("/assets/img/bg/bg2.png");
-    background-position-x: center;
-    background-position-y: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
+ .bg2 {
+     position: relative;
 
-.bg3{
-    position: relative;
-    &::after{
-        content: "";
-        position: absolute;
-        inset: 0;
-        z-index: -1;
-        background-image: url("/assets/img/bg/bg3.png");
-        background-position-x: center;
-        background-position-y: center;
-        opacity: 0.5;
-        background-repeat: no-repeat;
-        background-size: contain;
-        transform: scale(1.5);
-    }
-}
+     &::after {
+         content: "";
+         position: absolute;
+         inset: 0;
+         z-index: -1;
+         background-image: url("/assets/img/bg/bg2.png");
+         background-position-x: center;
+         background-position-y: center;
+         background-repeat: no-repeat;
+         background-size: contain;
+         opacity: 0.75;
+         transform: scale(2);
 
 
+     }
+ }
 
-@media (min-width:650px) {
-    .bg1{
-    background-size: cover;
+ .bg3 {
+     position: relative;
 
-    }
-    
-}
+     &::after {
+         content: "";
+         position: absolute;
+         inset: 0;
+         z-index: -1;
+         background-image: url("/assets/img/bg/bg3.png");
+         background-position-x: center;
+         background-position-y: center;
+         opacity: 0.5;
+         background-repeat: no-repeat;
+         background-size: contain;
+         transform: scale(1.5);
+     }
+ }
 
+
+
+ @media (min-width:650px) {
+     .bg1 {
+         background-size: cover;
+
+     }
+
+ }
