@@ -1,5 +1,5 @@
 "use client"
-import Section from '../Sections'
+import Section from '/src/components/Globals/Sections'
 import Card from './Card'
 
 import useCarrusel from '/src/lib/Carrusels/Grid/useCarrusel'

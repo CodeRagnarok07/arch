@@ -1,5 +1,5 @@
 
-import Section from "./Sections"
+import Section from "../../Globals/Sections"
 
 export default function Contacto() {
 

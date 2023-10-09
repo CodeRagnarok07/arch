@@ -1,6 +1,6 @@
 "use client"
 import { useState } from "react";
-import Section from "../Sections"
+import Section from "../../../Globals/Sections"
 import Ring3D from './Ring3D'
 import { socials } from "/src/consts";
 

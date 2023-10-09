@@ -1,12 +1,12 @@
 import MovilScroll from '/src/lib/MovilScroll'
-import Hero from "/src/components/pages/Hero";
-import Portfolio from "/src/components/pages/Portfolio";
-import Socials from "/src/components/pages/Socials";
-import Contact from "/src/components/pages/Contact";
-import Skills from "/src/components/pages/Skills";
-import Services from "/src/components/pages/Services";
-import Experience from '/src/components/pages/Experience';
-import About from '/src/components/pages/About';
+import Hero from "../components/Layout/pages/Hero";
+import Portfolio from "../components/Layout/pages/Portfolio";
+import Socials from "../components/Layout/pages/Socials";
+import Contact from "../components/Layout/pages/Contact";
+import Skills from "../components/Layout/pages/Skills";
+import Services from "../components/Layout/pages/Services";
+import Experience from '../components/Layout/pages/Experience';
+import About from '../components/Layout/pages/About';
 
 import NavbarMovil from "/src/components/Layout/NavbarMovil";
 
@@ -17,20 +17,36 @@ export default function App() {
         <MovilScroll>
 
             <main>
-                <About/>
-                <Experience/>
+                <Hero />
+
+                {/* api */}
+                <Experience />
+
+                {/* api */}
                 <Skills />
 
-                {/* <Services/>
-                <Contact/>
 
+               {/* 
+                    conectar api
+                    owl carrusel
+                    handle
+                */}
                 <Portfolio />
-                <Hero />
-                <Socials /> */}
+
+                {/* que funcione */}
+                <Contact />
+
+                {/* links */}
+                <Socials />
+
+                {/* <About />
+                 <Services />
+                */}
+
             </main>
 
 
-
+            {/* links working */}
             <NavbarMovil />
         </MovilScroll>
     )

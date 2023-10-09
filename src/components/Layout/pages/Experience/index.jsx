@@ -1,5 +1,6 @@
-import Section from "../Sections";
+import Section from "/src/components/Globals/Sections";
 import styles from './styles.module.scss'
+
 export default function Experience() {
     const Experience = [
         {
@@ -17,6 +18,24 @@ export default function Experience() {
 
     const array = [...Array(2).keys()];
 
+    const handleClick =(e)=>{
+
+        const parent = e.currentTarget.parentNode.children
+
+        for (let index = 0; index < parent.length; index++) {
+            const element = parent[index];
+            element.className = styles.element
+        }
+
+        const current = e.currentTarget
+        setTimeout(()=>{
+            console.log(current);
+            current.classList.toggle(styles.active)
+
+        },750)
+
+    }
+
 
     return <Section title="Experiencia Laboral">
 
@@ -24,7 +43,7 @@ export default function Experience() {
 
             <div className={styles.experience}>
                 {array.map((v, k) => (
-                    <div key={k} className={styles.element}>
+                    <div onClick={(e)=>handleClick(e)} key={k} className={styles.element }>
                         <div className={styles.card}>
                             <h2 className="font-bold text-2xl">
                                 Freelance

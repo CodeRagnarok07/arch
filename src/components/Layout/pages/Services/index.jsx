@@ -1,4 +1,4 @@
-import Section from "../Sections";
+import Section from "/src/components/Globals/Sections";
 import Card from "./Card";
 
 export default function Services() {
