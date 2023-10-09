@@ -17,6 +17,13 @@ export default function App() {
         <MovilScroll>
 
             <main>
+                {/* 
+                    conectar api
+                    owl carrusel
+                    handle
+                */}
+                <Portfolio />
+
                 <Hero />
 
                 {/* api */}
@@ -26,12 +33,7 @@ export default function App() {
                 <Skills />
 
 
-               {/* 
-                    conectar api
-                    owl carrusel
-                    handle
-                */}
-                <Portfolio />
+              
 
                 {/* que funcione */}
                 <Contact />

@@ -8,15 +8,13 @@ export default function NavbarMovil() {
    
 
     return <div className="fixed inset-x-0 bottom-0 flex justify-center  ">
-        <nav className="w-full 
+        <nav className="w-full max-w-[440px]
         min-h-min
         ">
 
 
-            <img src={'/assets/svg/nav/Interface.svg'} 
-
-
-            alt="" className='absolute w-full translate-y-[-20%] scale-[105%]' />
+            <img src={'/assets/svg/nav/Interface.svg'}   
+            alt="" className='absolute w-full translate-y-[-20%] scale-[105%] max-w-[440px]' />
 
          
 
