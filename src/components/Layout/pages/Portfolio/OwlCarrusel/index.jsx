@@ -66,7 +66,7 @@ export default function OwlCarrusel() {
                 carrousel.children[actual]?.classList.add(styles.main)
                 carrousel.children[actual - 1]?.classList.add(styles.left)
 
-                if (actual >= carrousel.children.length-1) {
+                if (actual >= carrousel.children.length - 1) {
                     carrousel.children[0]?.classList.add(styles.right)
                     setCurrent(-1)
                 }
@@ -74,33 +74,30 @@ export default function OwlCarrusel() {
                 if (actual <= 0) {
                     carrousel.children[carrousel.children.length - 1]?.classList.add(styles.left)
 
-                } 
+                }
 
             } else {
-                carrousel.children[actual+ 1]?.classList.add(styles.right)
+                carrousel.children[actual + 1]?.classList.add(styles.right)
                 carrousel.children[actual]?.classList.add(styles.main)
-                carrousel.children[actual- 1]?.classList.add(styles.left)
+                carrousel.children[actual - 1]?.classList.add(styles.left)
 
-                if (actual == 0) {
+                if (actual <= 0) {
                     carrousel.children[actual]?.classList.add(styles.main)
                     carrousel.children[carrousel.children.length - 1]?.classList.add(styles.left)
-                } else {
+                    setCurrent(carrousel.children.length)
 
                 }
 
-                if(actual < 0){
+                console.log(actual, carrousel.children.length - 1);
+
+
+                if (actual == carrousel.children.length - 1) {
+                    console.log("ultimo");
                     carrousel.children[carrousel.children.length - 2]?.classList.add(styles.left)
                     carrousel.children[carrousel.children.length - 1]?.classList.add(styles.main)
-                    setCurrent(-1)
-
+                    carrousel.children[0]?.classList.add(styles.right)
                 }
-
-                // if (actual== carrousel.children.length - 1) {
-                //     carrousel.children[carrousel.children.length - 1]?.classList.add(styles.right)
-                //     setCurrent(0)
-                // }
             }
-            console.log(actual);
 
         }
 
@@ -120,7 +117,7 @@ export default function OwlCarrusel() {
             }
             setCurrent(actual)
             hanldeNext(true, actual)
-        // previus
+            // previus
         } else if (touchStart + 50 < e.changedTouches[0].clientX) {
             let actual = current - 1
             setCurrent(actual)
