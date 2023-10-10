@@ -1,3 +1,4 @@
+"use client"
 import Section from "/src/components/Globals/Sections";
 import styles from './styles.module.scss'
 
@@ -19,7 +20,6 @@ export default function Experience() {
     const array = [...Array(2).keys()];
 
     const handleClick =(e)=>{
-
         const parent = e.currentTarget.parentNode.children
 
         for (let index = 0; index < parent.length; index++) {

@@ -46,7 +46,7 @@ export default function OwlCarrusel() {
             carrousel.children[current + 1]?.classList.add(styles.left)
         }
 
-    }, [])
+    })
 
 
     const hanldeNext = (bool, actual) => {
@@ -132,8 +132,8 @@ export default function OwlCarrusel() {
     return <div>
 
         <ul
-            onTouchStart={(e) => hanldeTouchstart(e)}
-            onTouchEnd={(e) => hanldeTouchEnd(e)}
+            // onTouchStart={(e) => hanldeTouchstart(e)}
+            // onTouchEnd={(e) => hanldeTouchEnd(e)}
 
             ref={refCarusel} className={styles.carrousel} >
             {img_webs.map((v, k) => (

@@ -17,11 +17,7 @@ export default function App() {
         <MovilScroll>
 
             <main>
-                {/* 
-                    conectar api
-                    owl carrusel
-                    handle
-                */}
+                {/* conectar api */}
                 <Portfolio />
 
                 <Hero />
@@ -32,6 +28,7 @@ export default function App() {
                 {/* api */}
                 <Skills />
 
+                <Services />
 
               
 
@@ -42,7 +39,6 @@ export default function App() {
                 <Socials />
 
                 {/* <About />
-                 <Services />
                 */}
 
             </main>

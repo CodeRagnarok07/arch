@@ -1,3 +1,5 @@
+import Img from "./Img"
+
 export default function Frame() {
 
     const img_webs = [
@@ -12,22 +14,14 @@ export default function Frame() {
 
       
 
-        <div className='relative'>
+        <div className='relative max-w-sm'>
 
             <img className='absolute inset-0 brightness-200 blur-[1px]' src={"assets/img/hero/mask.png"} alt="" />
             <img src={"/assets/img/hero/frame.png"} alt="" />
 
             <div className="absolute inset-0 a-floating">
                 {img_webs.map((v, k) => (
-                    <img 
-                    className='w-24 h-auto  absolute'
-                     key={k} src={v} alt=""
-                    
-                    style={{
-                        "top": (Math.random(k, 10)*50)+"%",
-                        "right": (Math.random(k, 10)*100)+"%", 
-                        animationDelay: k+"s"                       
-                     }}
+                    <Img key={k} src={v} alt="" k={k}
                     />
                 ))}
             </div>
