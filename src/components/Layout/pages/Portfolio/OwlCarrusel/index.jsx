@@ -15,39 +15,49 @@ export default function OwlCarrusel() {
 
     const refCarusel = useRef()
     const carrousel = refCarusel.current
+    useEffect(() => {
+        if (refCarusel?.current?.children[0]) {
+            const carrousel = refCarusel.current
+            carrousel.children[0]?.classList.add(styles.right)
+            carrousel.children[1]?.classList.add(styles.main)
+            carrousel.children[2]?.classList.add(styles.left)
+        }
+
+    }, [])
+
+
 
     const [current, setCurrent] = useState(1)
 
     const handleClick = (e, k) => {
-        for (let index = 0; index < carrousel.children.length; index++) {
-            const element = carrousel.children[index];
-            element.className = styles.item
-        }
+        const parent = e.currentTarget.parentNode
+        if (parent.children[0]) {
 
-        setCurrent(k)
-
-        if (refCarusel?.current?.children[0]) {
-            carrousel.children[k - 1]?.classList.add(styles.left)
-            carrousel.children[k]?.classList.add(styles.main)
-            carrousel.children[k + 1]?.classList.add(styles.right)
-            if (k - 1 < 0) {
-                carrousel.children[carrousel.children.length - 1]?.classList.add(styles.left)
+            for (let index = 0; index < parent.children.length; index++) {
+                const element = parent.children[index];
+                element.className = styles.item
             }
-            if (k == carrousel.children.length - 1) {
-                carrousel.children[0]?.classList.add(styles.right)
+
+            setCurrent(k)
+
+            if (refCarusel?.current?.children[0]) {
+                parent.children[k - 1]?.classList.add(styles.left)
+                parent.children[k]?.classList.add(styles.main)
+                parent.children[k + 1]?.classList.add(styles.right)
+                if (k - 1 < 0) {
+                    carrousel.children[carrousel.children.length - 1]?.classList.add(styles.left)
+                }
+                if (k == carrousel.children.length - 1) { // 4
+                    carrousel.children[0]?.classList.add(styles.right)
+                    setCurrent(0)
+
+                }
             }
         }
     }
-    useEffect(() => {
-        if (refCarusel?.current?.children[0]) {
-            const carrousel = refCarusel.current
-            carrousel.children[current - 1]?.classList.add(styles.right)
-            carrousel.children[current]?.classList.add(styles.main)
-            carrousel.children[current + 1]?.classList.add(styles.left)
-        }
 
-    })
 
+  
 
     const hanldeNext = (bool, actual) => {
 
