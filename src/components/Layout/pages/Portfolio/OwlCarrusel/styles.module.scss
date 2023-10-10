@@ -2,13 +2,17 @@
 
     position: relative;
     width: 100%;
-    min-height: 17rem;
+    min-height: 45vh;
     display: grid;
     place-items: center;
     margin-bottom: 1rem;
+
     .item {
-        width: 70%;
+        width: 50%;
+        max-width: 35rem;
         height: 100%;
+
+
         position: absolute;
         display: inline-block;
         -webkit-transition: all .3s ease-in-out;

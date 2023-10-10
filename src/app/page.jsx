@@ -17,33 +17,16 @@ export default function App() {
         <MovilScroll>
 
             <main>
-                {/* conectar api */}
-                <Portfolio />
-
                 <Hero />
 
-                {/* api */}
-                <Experience />
-
-                {/* api */}
-                <Skills />
-
-                <Services />
-
-              
-
-                {/* que funcione */}
-                <Contact />
-
-                {/* links */}
-                <Socials />
-
-                {/* <About />
-                */}
-
+                {/* api */}<Experience />
+                {/* api */}<Portfolio />
+                {/* api */}<Skills />
+                {/* real */}<Services />
+                {/* que funcione */} <Contact />
+                {/* links */} <Socials />
+                {/* <About /> */}
             </main>
-
-
             {/* links working */}
             <NavbarMovil />
         </MovilScroll>

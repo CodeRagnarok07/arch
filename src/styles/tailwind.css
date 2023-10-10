@@ -70,7 +70,11 @@ body {
 
 @media (min-width: 640px) {
     .container {
-        max-width: 450px;
+        max-width: 640px;
+    }
+    .container>.container{
+        max-width: 80%;
+
     }
 }
 
@@ -85,9 +89,6 @@ section {
     
 }
 
-header.header{
-    text-align: center;
-}
 
 
 

@@ -1,4 +1,4 @@
-@import '/src/styles/themes';
+@import '/src/styles/main';
 
 .exp_descripcion {}
 
@@ -14,21 +14,13 @@
         cursor: pointer;
 
         .card {
-
             border: 1px solid hsla(202, 100%, 29%, 0.616);
-
             padding: .25rem;
             transition: background-color 500ms ease-in-out;
-
-
             h2 {
-                font-size: 1.5rem;
                 font-weight: 800;
             }
-
             p {
-                animation-delay: 4s;
-
                 overflow: hidden;
                 transition: max-height 500ms ease-in-out;
                 -webkit-transition: max-height 750ms ease-in-out;
@@ -36,11 +28,15 @@
                 -ms-transition: max-height 750ms ease-in-out;
                 -o-transition: max-height 750ms ease-in-out;
                 max-height: 0rem;
+            }
 
+        }
 
+        @include brackpoint(640px){
+        padding: .5rem 0 .5rem 1rem;
 
-
-
+            .card{
+                padding: 1rem;
             }
         }
 

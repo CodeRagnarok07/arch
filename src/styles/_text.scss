@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700;800&display=swap');
+
 body,
 p {
 
@@ -7,4 +8,43 @@ p {
     font-size: 0.75rem;
     line-height: normal;
 
+}
+
+.small {
+    font-size: 0.65rem;
+
+}
+
+
+
+header.header {
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem;
+    // mx-auto flex flex-col items-center px-8
+    h2 {
+        letter-spacing: .34rem/* 5.44px */;
+        font-size: 2rem/* 32px */;
+    }
+
+    @media (min-width: 640px) {
+        h2 {
+            font-size: 3rem;
+        }
+    }
+}
+
+
+@media (min-width: 640px) {
+
+    body,
+    p {
+
+        font-size: 1rem;
+        line-height: 1;
+
+    }
 }

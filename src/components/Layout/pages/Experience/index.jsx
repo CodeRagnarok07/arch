@@ -45,9 +45,7 @@ export default function Experience() {
                 {array.map((v, k) => (
                     <div onClick={(e)=>handleClick(e)} key={k} className={styles.element }>
                         <div className={styles.card}>
-                            <h2 className="font-bold text-2xl">
-                                Freelance
-                            </h2>
+                            <h2 className="font-bold text-2xl sm:text-5xl"> Freelance</h2>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore eveniet aperiam reprehenderit. Aliquid soluta, harum laudantium labore, iure earum beatae aliquam consectetur natus amet architecto facilis, quidem deserunt magni repellat?</p>
                         </div>
                     </div>

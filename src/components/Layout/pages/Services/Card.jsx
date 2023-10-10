@@ -18,10 +18,10 @@ export default function Card() {
             </div>
             <div className="border-[#005C94] shadow-none border-2 border-opacity-60 rounded-lg bg-black p-2">
                 <h2 className="text-center text-xl font-bold">Notion a Web profesional</h2>
-                <p className="text-[0.65rem]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora ipsa dignissimos impedit distinctio facilis error architecto ad sapiente rerum officiis laborum.</p>
+                <p className="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora ipsa dignissimos impedit distinctio facilis error architecto ad sapiente rerum officiis laborum.</p>
                 <h4 className="font-bold underline text-lg">Incluye:</h4>
 
-                <ul className="flex flex-col gap-2 my-2">
+                <ul className="flex flex-col  gap-1 sm:gap-2 my-2">
                     {feats.map((v, k) => (
                         <li className="flex gap-2 items-center" key={k}>
                             <i className="w-5">
@@ -36,7 +36,7 @@ export default function Card() {
                 <h5 className="font-bold text-2xl text-center">$499</h5>
 
             </div>
-            <div className="flex justify-around my-4">
+            <div className="flex justify-around my-4 sm:my-6">
                 <div className="btn rounded-sm border-secondary">Contratar</div>
                 <div className="btn rounded-sm border-danger">Test</div>
                 <div className="btn rounded-sm border-blue">Ver Mas</div>

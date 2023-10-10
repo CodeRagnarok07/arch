@@ -44,20 +44,20 @@ export default function OwlCarrusel() {
                 parent.children[k - 1]?.classList.add(styles.left)
                 parent.children[k]?.classList.add(styles.main)
                 parent.children[k + 1]?.classList.add(styles.right)
-                if (k - 1 < 0) {
-                    carrousel.children[carrousel.children.length - 1]?.classList.add(styles.left)
-                }
-                if (k == carrousel.children.length - 1) { // 4
-                    carrousel.children[0]?.classList.add(styles.right)
-                    setCurrent(0)
 
+                if (k - 1 < 0) {
+                    parent.children[parent.children.length - 1]?.classList.add(styles.left)
                 }
+                if (k == parent.children.length - 1) { 
+                    parent.children[0]?.classList.add(styles.right)
+                }
+
             }
         }
     }
 
 
-  
+
 
     const hanldeNext = (bool, actual) => {
 
@@ -147,8 +147,14 @@ export default function OwlCarrusel() {
 
             ref={refCarusel} className={styles.carrousel} >
             {img_webs.map((v, k) => (
-                <li onClick={(e) => handleClick(e, k)} className={styles.item} key={k}>
-                    <Card lg={v} />
+                <li onClick={(e) => handleClick(e, k)} className={styles.item } key={k} >
+
+                    <div className="h-full flex flex-col items-center p-2 rounded-xl border-2 bg-[#000000] border-[#00000060] shadow-md shadow-white">
+
+                        <img className="w-full h-full  rounded-xl object-cover object-center" src={v} alt="" />
+
+                        <div className="text-slate-600">.-.-.-.-.</div>
+                    </div>
                 </li>
             ))}
         </ul>
