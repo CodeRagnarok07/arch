@@ -8,7 +8,7 @@ export const myData = {
     app_short_name: "ARCH-portfolio",
     description: "soe grothemarketign",
     keywords: ["developer", "webdesing", "web", "UX/UI", "growth haker"],
-    url : "https://arch-indol.vercel.app/"
+    url : process.env.NEXT_PUBLIC_URL
 }
 
 
