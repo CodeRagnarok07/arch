@@ -10,7 +10,7 @@ export default function manifest() {
     start_url: meta.metadataBase,
     display: 'standalone',
     background_color: '#fff',
-    theme_color: meta.colorScheme,
+    theme_color: '#fff',
     icons: [
       {
         "src": "/icons/icon-144x144.png",
