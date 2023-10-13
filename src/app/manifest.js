@@ -1,14 +1,16 @@
+import {meta} from './meta'
+
 
 export default function manifest() {
   
   return {
-    name: 'Next.js App',
-    short_name: 'Next.js App',
-    description: 'Next.js App',
-    start_url: 'https://arch-indol.vercel.app/',
+    name: meta.title,
+    short_name: meta.applicationName,
+    description:  meta.description,
+    start_url: meta.metadataBase,
     display: 'standalone',
     background_color: '#fff',
-    theme_color: '#fff',
+    theme_color: meta.colorScheme,
     icons: [
       {
         "src": "/icons/icon-144x144.png",

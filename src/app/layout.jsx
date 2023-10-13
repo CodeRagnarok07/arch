@@ -3,7 +3,7 @@ import '/src/styles/tailwind.css'
 
 // fonts
 import { tourner, lemonmilk } from '/src/assets/fonts'
-import meta from './meta'
+import {meta} from './meta'
 // Metadata
 
 // export const metadata = {
@@ -13,7 +13,7 @@ import meta from './meta'
 
 
 
-export const metadata = await meta()
+export const metadata = meta
 
 
 
