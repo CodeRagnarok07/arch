@@ -52,7 +52,7 @@ body {
 
 
 .font-tourner {
-    font-family: "tourner";
+    font-family: "tourner" ;
     letter-spacing: .34rem/* 5.44px */
 }
 
@@ -80,14 +80,6 @@ body {
 
 
 
-
-section {
-    padding-bottom: 10%;
-    min-height: 100dvh;
-    min-width: min-content;
-    width: 100%;
-    
-}
 
 
 

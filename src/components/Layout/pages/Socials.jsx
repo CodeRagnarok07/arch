@@ -5,7 +5,7 @@ export default function Socials() {
 
 
 
-    return <section className={"pb-20 pt-8 flex flex-col  gap-12 bg1 justify-center "}>
+    return <section className={" flex flex-col  bg1 justify-center "}>
 
         <header className="header container">
             <h2 className="font-tourner ">Redes Sociales</h2>

@@ -48,11 +48,15 @@
     section {
       min-height: 100dvh;
       width: 100dvw;
-
       max-width: 100dvw;
 
       scroll-snap-align: center;
       scroll-snap-stop: always;
+
+      padding-top: 5%;
+      padding-bottom: 150px;
+
+
       // overflow-x: hidden;
 
       // &:nth-child(even) {

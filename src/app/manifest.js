@@ -5,7 +5,7 @@ export default function manifest() {
     name: 'Next.js App',
     short_name: 'Next.js App',
     description: 'Next.js App',
-    start_url: 'http://localhost:3000/',
+    start_url: 'https://arch-indol.vercel.app/',
     display: 'standalone',
     background_color: '#fff',
     theme_color: '#fff',

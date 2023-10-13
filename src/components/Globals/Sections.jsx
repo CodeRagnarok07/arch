@@ -10,7 +10,7 @@ const desc = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
  */
 export default function Section({ title = "titulo", description = desc, bg = "bg1", children }) {
 
-    return <section className={"pb-20 pt-8 sm:pt-12 flex flex-col  gap-5 " + bg}>
+    return <section className={" flex flex-col  " + bg}>
         
         <header className="header container">
                 <h2 className='font-tourner'>

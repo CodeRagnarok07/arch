@@ -10,17 +10,16 @@ export default function Hero({ bg }) {
 
     return <Section bg="bg3" title="Skills" desciption="Puede agendar un cita y asesorarte gratuita y personalmente">
 
-        <div className="my-auto">
-            <div className="sm:scale-150">
+            <div className="scale-75 sm:scale-150">
 
                 <Ring3D data={socials} current={current} setCurrent={setCurrent} />
             </div>
 
-            <div className="container flex  flex-col text-center ">
+            <div className="container flex  flex-col text-center sm:mt-[8rem]  ">
 
-                <h3 className="font-tourner text-[1rem] mb-1">Elemento</h3>
+                <h3 className="font-tourner text-[1rem] mb-1 ">Elemento</h3>
                 <div className="box-shadow-special ">
-                    <p className="flex px-4 py-1">
+                    <p className="hidden sm:flex px-4 py-1">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam quasi nobis dolore similique deserunt corrupti voluptatum,
                     </p>
                 </div>
@@ -30,7 +29,6 @@ export default function Hero({ bg }) {
                     <div className="btn border-secondary">ver mas</div>
                 </div>
             </div>
-        </div>
 
 
     </Section>

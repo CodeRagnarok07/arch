@@ -7,7 +7,7 @@ export default async function myFunction(cookies) {
     // const host = headersList.get("host")
     // meta.metadataBase = new URL("http://" + host)
     
-    let url = "https://code-ragnarok.vercel.app/"
+    let url = "https://arch-indol.vercel.app/"
     meta.metadataBase = url
     return meta
 }

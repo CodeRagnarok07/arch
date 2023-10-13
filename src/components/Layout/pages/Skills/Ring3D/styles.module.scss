@@ -9,7 +9,11 @@
     .controls {
         display: flex;
         justify-content: space-between;
-        margin-top: 8rem;
+        margin-top: auto;
+        translate: 0 150% ;
+        >div{
+            margin: 0 4rem;
+        }
 
         svg {
             height: 3rem;

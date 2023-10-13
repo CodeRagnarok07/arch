@@ -111,9 +111,9 @@ export const meta = {
         title: 'Apple Web App',
         statusBarStyle: 'black-translucent',
         startupImage: [
-            'icons/public/icons/icon-768x1004.png', // image-768x1004.png', //
+            '/icons/icon-768x1004.png', // image-768x1004.png', //
             {
-                url: 'icons/public/icons/icon-1536x2008.png', // image-1536x2008.png
+                url: '/icons/icon-1536x2008.png', // image-1536x2008.png
                 media: '(device-width: 768px) and (device-height: 1024px)',
             },
         ],
