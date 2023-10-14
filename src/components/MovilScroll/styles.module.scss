@@ -1,6 +1,7 @@
 .navigator {
  
-  position: relative;
+  position: absolute;
+  inset: 0;
   display: flex;
   flex-wrap: nowrap;
   overflow-y: hidden;

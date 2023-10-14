@@ -7,57 +7,7 @@ html,
 body {
     min-height: 100dvh;
     min-width: min-content;
-
-}
-
-@font-face {
-    font-family: "tourner";
-    src:
-        local("/fonts/tourner/Tourner.woff2")format('woff2'),
-        local("/fonts/tourner/Tourner.woff")format('woff'),
-        local("/fonts/tourner/Tourner.ttf")format('ttf'),
-
-    ;
-}
-
-@font-face {
-    font-family: "lemon-milk";
-    src: local('/fonts/lemon_milk/LEMONMILK-Bold.woff2', );
-    weight: '700';
-    style: 'normal';
-}
-
-@font-face {
-    font-family: "lemon-milk";
-    src: local('/fonts/lemon_milk/LEMONMILK-Medium.woff2', );
-    weight: '400';
-    style: 'normal';
-}
-
-@font-face {
-    font-family: "lemon-milk";    
-    src: local('/fonts/lemon_milk/LEMONMILK-Regular.woff2', );
-    weight: '500';
-    style: 'normal';
-}
-
-
-@font-face {
-    font-family: "lemon-milk";
-    src: local('/fonts/lemon_milk/LEMONMILK-Light.woff2', );
-    weight: '300';
-    style: 'normal';
-}
-
-
-
-.font-tourner {
-    /* font-family: "tourner" ; */
-    letter-spacing: .34rem/* 5.44px */
-}
-
-.font-lemonmilk {
-    font-family: "lemon-milk";
+    overflow: hidden;
 
 }
 
@@ -78,6 +28,10 @@ body {
     }
 }
 
+
+/* .fixed{
+    -webkit-backface-visibility: hidden;
+} */
 
 
 

@@ -1,4 +1,4 @@
-import MovilScroll from '/src/lib/MovilScroll'
+import MovilScroll from '../components/MovilScroll'
 import Hero from "../components/Layout/pages/Hero";
 import Portfolio from "../components/Layout/pages/Portfolio";
 import Socials from "../components/Layout/pages/Socials";
@@ -8,7 +8,7 @@ import Services from "../components/Layout/pages/Services";
 import Experience from '../components/Layout/pages/Experience';
 import About from '../components/Layout/pages/About';
 
-import NavbarMovil from "/src/components/Layout/NavbarMovil";
+
 
 
 export default function App() {
@@ -27,8 +27,21 @@ export default function App() {
                 {/* links */} <Socials />
                 {/* <About /> */}
             </main>
+            
+            <main>
+                {/* api */}<Experience />
+                <Hero />
+
+                {/* api */}<Portfolio />
+                {/* api */}<Skills />
+                {/* real */}<Services />
+                {/* que funcione */} <Contact />
+                {/* links */} <Socials />
+                {/* <About /> */}
+            </main>
+
+
             {/* links working */}
-            <NavbarMovil />
         </MovilScroll>
     )
 }
