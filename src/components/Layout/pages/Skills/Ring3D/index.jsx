@@ -3,7 +3,10 @@ import { useRef, useState } from 'react'
 import styles from './styles.module.scss'
 import ImagenLocal from '/src/utils/ImagenLocal'
 
-const MyComponent = ({ data, setCurrent, current }) => {
+const MyComponent = ({ data }) => {
+
+    const [current, setCurrent] = useState()
+
 
     const sliderRef = useRef()
 

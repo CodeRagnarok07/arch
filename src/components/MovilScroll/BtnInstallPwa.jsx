@@ -45,10 +45,18 @@ export default function BtnInstallPwa({ size = 24, color = "#16a34a" }) {
   return <div onClick={() => promptToInstall()}
     className="fixed top-0 right-0  p-8"
   >
-    <div className='relative group z-50 py-1 px-4 text-black cursor-pointer flex items-center text-lg gap-4 rounded-full'
-    style={{background:"white", cursor:"pointer",color:color}}
+    <div className='
+    
+    relative group z-50 py-1 px-4 text-black cursor-pointer flex items-center text-lg gap-1 rounded-full w-min'
+      style={{ background: "white", cursor: "pointer", color: color }}
     >
 
+      <div className='hidden group-hover:flex font-bold ' >
+
+        <span className='transition-transform delay-700 ease-in-out scale-0 group-hover:scale-100 leading-none'>
+          Install
+        </span>
+      </div>
 
       <svg
         fill={color}
@@ -57,9 +65,6 @@ export default function BtnInstallPwa({ size = 24, color = "#16a34a" }) {
         viewBox="0 -960 960 960" >
         <path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z" /></svg>
 
-      <span className='hidden group-hover:flex'>
-        Install
-      </span>
     </div>
   </div>
 

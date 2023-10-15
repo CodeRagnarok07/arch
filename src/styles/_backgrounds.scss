@@ -1,9 +1,20 @@
  /* BACKGROUNDS */
  .bg1 {
+
+
      background-image: url('/assets/img/bg/bg1.png');
      background-position-x: center;
      background-repeat: no-repeat;
      background-size: contain;
+
+     animation: bounce auto linear 6 alternate;
+     animation-timeline: scroll(root);
+
+     @keyframes bounce {
+         100% {
+             transform: translateY(-50vh);
+         }
+     }
  }
 
  .bg2 {

@@ -21,24 +21,15 @@ export default function App() {
 
                 {/* api */}<Experience />
                 {/* api */}<Portfolio />
-                {/* api */}<Skills />
+                {/* api */}
+                {/* <Skills /> */}
                 {/* real */}<Services />
                 {/* que funcione */} <Contact />
                 {/* links */} <Socials />
                 {/* <About /> */}
             </main>
             
-            <main>
-                {/* api */}<Experience />
-                <Hero />
-
-                {/* api */}<Portfolio />
-                {/* api */}<Skills />
-                {/* real */}<Services />
-                {/* que funcione */} <Contact />
-                {/* links */} <Socials />
-                {/* <About /> */}
-            </main>
+       
 
 
             {/* links working */}

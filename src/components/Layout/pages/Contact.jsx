@@ -4,7 +4,7 @@ import Section from "../../Globals/Sections"
 export default function Contacto() {
 
     return (
-        <Section title="contacto" description="Puede agendar un cita y asesorarte gratuita y personalmente">
+        <Section title="contacto" description="">
             <div className="container flex justify-center ">
                 <div className="w-[400px]">
 
