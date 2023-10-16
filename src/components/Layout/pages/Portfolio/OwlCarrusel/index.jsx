@@ -1,6 +1,5 @@
 "use client"
 import { useEffect, useRef, useState } from 'react'
-import Card from '../Card'
 import styles from './styles.module.scss'
 
 export default function OwlCarrusel() {

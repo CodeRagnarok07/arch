@@ -1,19 +1,16 @@
-import Section from "../../../Globals/Sections"
+import Section from "/src/components/Globals/Sections"
 import Ring3D from './Ring3D'
 import { socials } from "/src/consts";
 
 
+function Skills() {
 
+    // const data = await fetch(process.env.NEXT_PUBLIC_URL + "api/notion/skills").then((res) =>     res.json())
 
-// const dynamicData = await fetch(process.env.NEXT_PUBLIC_URL + "api/notion/skills", { cache: 'no-store' })
-
-export default function Skills() {
-
-    // console.log(dynamicData);
-    return <Section bg="bg3" title="Skills" desciption="">
+    return (<Section bg="bg3" title="Skills" desciption="">
 
         <div className="scale-75 sm:scale-150">
-            <Ring3D data={data} />
+            <Ring3D data={socials} />
         </div>
 
         <div className="container flex  flex-col text-center sm:mt-[8rem]  ">
@@ -32,5 +29,7 @@ export default function Skills() {
         </div>
 
 
-    </Section>
+    </Section>)
 }
+
+export default Skills

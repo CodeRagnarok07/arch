@@ -14,21 +14,21 @@ export default function NavbarMovil() {
 
 
             <img src={'/assets/svg/nav/Interface.svg'}   
-            alt="" className='absolute w-full translate-y-[-20%] scale-[105%] max-w-[440px]' />
+            alt="" className='absolute w-full translate-y-[-20%] scale-[105%] max-w-[440px] z-[-1]' />
 
          
 
           
 
-            <div className="flex items-center justify-around py-6">
+            <div className="flex items-center justify-around py-6 ">
                 {pages.map((v, k) => (
-                    <div key={k} className='text-[0.65rem] border-b-2 rounded-sm flex flex-col items-center'>
+                    <a key={k} href={"#"+v} className='min-w-[48px]  p-1 cursor-pointer hover:bg-[#0091f94f] text-[0.65rem] border-b-2 rounded-lg  flex flex-col items-center'>
                         <img 
-                        className='h-6 w-6' 
+                        className='h-6 w-6 ' 
                         src={`/assets/svg/nav/${v}.svg`}
-                        alt="" />
+                        alt={"#"+v} />
                         {v}
-                    </div>
+                    </a> 
                 ))}
             </div>
         </nav>

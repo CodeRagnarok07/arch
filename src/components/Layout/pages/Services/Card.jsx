@@ -1,7 +1,13 @@
-import icon from "./icon.svg"
-import arrow from "./arrow.svg"
+import icon from "/assets/svg/services/icon.svg"
+import arrow from "/assets/svg/services/arrow.svg"
 
 export default function Card() {
+
+    const active = {
+        color: 'white',
+    };
+
+    
 
     const feats = [
         "Diseño UX UI responsivo Personalizado",
@@ -36,6 +42,7 @@ export default function Card() {
                 <h5 className="font-bold text-2xl text-center">$499</h5>
 
             </div>
+
             <div className="flex justify-around my-4 sm:my-6">
                 <div className="btn rounded-sm border-secondary">Contratar</div>
                 <div className="btn rounded-sm border-danger">Test</div>
@@ -47,7 +54,7 @@ export default function Card() {
                 <div className="flex  justify-center gap-1
                 ">
                     <div className="bg-slate-700 h-1 w-8 rounded-2xl" />
-                    <div className="bg-slate-100 h-1 w-8 rounded-2xl" />
+                    <div className={"bg-slate-700 h-1 w-8 rounded-2xl " + " " + active} />
                     <div className="bg-slate-700 h-1 w-8 rounded-2xl" />
                 </div>
             </div>

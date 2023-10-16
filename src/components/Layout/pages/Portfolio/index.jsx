@@ -1,4 +1,3 @@
-"use client"
 import OwlCarrusel from './OwlCarrusel'
 import Section from '/src/components/Globals/Sections'
 
