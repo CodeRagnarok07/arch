@@ -1,17 +1,44 @@
 {
     "title": "Servicios; Diseño y Desarrollo",
-    "Planes": [
+    "planes": [
         {
-            "tipo": "Básico",
-            "description": "Ideal para portafolios y landing pages. Creo sitios web elegantes y funcionales que destacan tu marca o proyecto."
+            "tipo": "Basico",
+            "price": 299,
+            "description": "Ideal para portafolios y landing pages. Creo sitios web elegantes y funcionales que destacan tu marca o proyecto.",
+            "include": [
+                "Diseño personalizado enfocado en expericia de usuario movil",
+                "Landing page",
+                "Pagina de contacto"
+            ]
         },
         {
-            "tipo": "Estándar",
-            "description": "Perfecto para menús digitales, blogs y más. Desarrollo soluciones digitales personalizadas para satisfacer tus necesidades específicas."
+            "tipo": "Estandar",
+            "price": 499,
+            "description": "Perfecto para menús digitales, blogs y más. Desarrollo soluciones digitales personalizadas para satisfacer tus necesidades específicas.",
+            "include": [
+                "Diseño personalizado enfocado en expericia de usuario movil",
+                "Landing page",
+                "contratacion de dominio y hosting",
+                "Conexión de base de datos + Componente funcional",
+                "pagina de contacto",
+                "Optimizacion seo",
+                "2 meses de soporte tecnico"
+            ]
         },
         {
-            "tipo": "Premium",
-            "description": "Para proyectos más grandes como ecommerce, redes sociales, foros, etc. Ofrezco soluciones robustas y escalables que impulsan el crecimiento de tu negocio."
+            "tipo": "Negocio Profesional",
+            "price": 1999,
+            "description": "Para proyectos más grandes como ecommerce, redes sociales, foros, etc. Ofrezco soluciones robustas y escalables que impulsan el crecimiento de tu negocio.",
+            "include": [
+                "Diseño responsivo personalizado enfocado en expericia de usuario movil y escritorio",
+                "Landing page",
+                "contratacion de dominio y hosting",
+                "Conexión de base de datos + Componente funcional",
+                "Pagina de contacto",
+                "Integracion de servicios externos, pasarela de pago, registro de usuarios, etc",
+                "Optimizacion SEO",
+                "Hasta 6 meses de soporte tecnico"
+            ]
         }
     ]
 }

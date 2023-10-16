@@ -15,13 +15,13 @@ export default function App() {
     return (
 
         <MovilScroll>
+            <main id='services'>
+                {/* real */}<Services />
+            </main>
 
             <main id='home'>
                 <Hero />
                 {/* api */}<Portfolio />
-            </main>
-            <main id='services'>
-                {/* real */}<Services />
             </main>
 
             <main id='portfolio'>

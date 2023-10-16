@@ -10,10 +10,6 @@
     }
 }
 
-
-
-
-
 @keyframes zoom {
     from {
         transform: scale(0)
@@ -53,8 +49,6 @@
        
     }
 }
-
-
 
 
 .letter-image {
@@ -230,3 +224,25 @@
 // Bg gradient animate 
 // https://codepen.io/mike-schultz/pen/NgQvGO
 // https://stackoverflow.com/questions/68498857/css-animated-gradient-border-on-a-div
+
+
+.blurring {
+	color: transparent;
+	animation: blurring 5s ease-out infinite;
+	-webkit-animation: blurring 5s ease-out infinite;
+    
+    @keyframes blurring {
+        0%,100%	{text-shadow:  0 0 100px #fff; opacity:0;}
+        5%,95% {text-shadow:  0 0 90px #fff;}
+        15%,85%	{opacity: 1;}
+        20%,80% {text-shadow:  0 0 0px #fff;}
+    }
+    
+    @-webkit-keyframes blurring {
+        0%,100%	{text-shadow:  0 0 100px #fff; opacity:0;}
+        5%,95% {text-shadow:  0 0 90px #fff;}
+        15%,85%	{opacity: 1;}
+        20%,80% {text-shadow:  0 0 0px #fff;}
+    }
+}
+
