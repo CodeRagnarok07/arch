@@ -1,7 +1,7 @@
 "use client"
 import icon from "/assets/svg/services/icon.svg"
 import arrow from "/assets/svg/services/arrow.svg"
-import data from "./data.json"
+import data from "/src/locale/data/services.json"
 import { useEffect, useRef, useState } from "react";
 
 
@@ -12,13 +12,6 @@ export default function Card() {
     const [current, setCurrent] = useState(1)
 
 
-    const feats = [
-        "Diseño UX UI responsivo Personalizado",
-        "1 Conexión De 1 Base de datos",
-        "2 Componente funcional [ blog, servicios,  pag, etc]",
-        "1 Landing page",
-        "Contacto",
-    ]
 
 
     const texts = useRef()
@@ -36,7 +29,7 @@ export default function Card() {
                 const element = blurrings[index];
                 element.classList.toggle("blurring")
             }
-        },"1000")
+        },"750")
      
 
         setTimeout(()=>{
