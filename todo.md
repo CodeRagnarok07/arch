@@ -3,7 +3,6 @@
 - [ ] global
   - [ ] Bgs animations
   - [ ] tourne title animations
-  - [ ] 
 - [ ] Navabar
   - [ ] Working route
   - [ ] Active

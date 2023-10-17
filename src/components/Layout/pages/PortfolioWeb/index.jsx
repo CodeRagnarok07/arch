@@ -11,7 +11,7 @@ export default function Skills() {
     ]
 
     
-    return <Section bg="bg2" title="Portafolio web">
+    return <Section bg="bg2" title="Portafolio WEB" description="Echa un vistazo a mi trabajo en aplicaciones de escritorio, donde combino funcionalidad con diseño intuitivo.">
         hola mundo
     </Section>
 }

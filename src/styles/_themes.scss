@@ -44,15 +44,16 @@
 
 // Todo animacion multicolor
 .box-shadow-special {
-    
+
 
     border: 0 solid v.$secondary;
     border-width: 0.1px 0 0 0;
 
     border-radius: 1rem;
     position: relative;
-    
-    filter: drop-shadow(0px -2px 2px color-mix(in srgb, v.$secondary, transparent 60%) );
+
+    filter: drop-shadow(0px -2px 2px color-mix(in srgb, v.$secondary, transparent 60%));
+
     &::after {
         position: absolute;
 
@@ -129,3 +130,75 @@ textarea {
 
 //     }
 // }
+
+
+
+.toggle {
+    $color: v.$blue;
+    --color: v.$blue;
+
+    border-left-width: 4px;
+    border-color: color-mix(in srgb, $color 30%, transparent);
+
+    padding: .25rem 0 .25rem .5rem;
+    color: gray;
+    cursor: pointer;
+    width: 100%;
+
+    .toggle-card {
+        border: 1px solid $color;
+        padding: .25rem;
+        transition: background-color 500ms ease-in-out;
+        width: 100%;
+        display: block;
+
+        h2 {
+            font-weight: 800;
+        }
+        svg{
+            display: none;
+        }
+
+        p {
+            overflow: hidden;
+            transition: max-height 500ms ease-in-out;
+            -webkit-transition: max-height 750ms ease-in-out;
+            -moz-transition: max-height 750ms ease-in-out;
+            -ms-transition: max-height 750ms ease-in-out;
+            -o-transition: max-height 750ms ease-in-out;
+            max-height: 0rem;
+        }
+
+    }
+
+    @media (min-width :640px) {
+        padding: .25rem 0 .25rem 0.5rem;
+
+        .toggle-card {
+            padding: 1rem;
+        }
+    }
+
+    &:target {
+        color: rgb(255, 255, 255);
+        border-color: $color;
+
+        .toggle-card {
+            border: 2px solid $color;
+            background: color-mix(in srgb, $color 30%, transparent);
+
+
+            p {
+                max-height: 100dvh;
+                height: auto;
+                margin-top: 0.25rem;
+            }
+        }
+
+        svg{
+            display: flex;
+        }
+
+
+    }
+}
