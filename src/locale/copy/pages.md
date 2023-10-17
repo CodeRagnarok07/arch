@@ -1,8 +1,6 @@
 
 
 
-
-
 1. **Home**
    - **Hero**: Bienvenido a mi mundo digital, donde la creatividad se encuentra con la funcionalidad. Como programador, ofrezco servicios de creación de aplicaciones multiplataforma a través de Progressive Web Applications, escalables a aplicaciones nativas Android e iOS. Mis aplicaciones están adaptadas a las últimas tendencias UX y UI, ofreciendo experiencias cinematográficas e interactividad tipo scroll web, al estilo de las aplicaciones más populares como TikTok e Instagram.
 
