@@ -101,3 +101,28 @@ header.header {
         }
     }
 }
+
+header>h1.font-lemonmilk{
+
+    animation: h1-font-lemonmilk ease-in-out 1s;
+    animation-fill-mode: both;
+    animation-timeline: --section;
+    animation-delay: 1s;
+    // animation-range: 25% cover 75%;
+
+
+    @keyframes h1-font-lemonmilk {
+        0% {
+            opacity: 1;
+        }
+
+        25% {
+            opacity: 0;
+        }
+        100% {
+            scale: (2);
+            opacity: 0;
+        }
+    }
+
+}
