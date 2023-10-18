@@ -2,6 +2,13 @@
 /** @type {import('next').NextConfig} */
 
 const million = require('million/compiler');
+const millionConfig = {
+  auto: true,
+  // if you're using RSC:
+  // auto: { rsc: true },
+}
+// module.exports = million.next(nextConfig, millionConfig)
+
 
 const withPWA = require('next-pwa')({
   dest: 'public',
@@ -12,22 +19,9 @@ const withPWA = require('next-pwa')({
 })
 
 
-const nextConfig = {
-  reactStrictMode: true
-}
-
-
-const millionConfig = {
-  auto: true,
-  // if you're using RSC:
-  // auto: { rsc: true },
-}
-
-
 
 // const nextConfig = {
 //   reactStrictMode: true,
-
 //   webpack: (config) => {
 //     config.resolve.alias = {
 //       ...config.resolve.alias,
@@ -41,6 +35,7 @@ const millionConfig = {
 //     return config
 //   },
 // }
-
-module.exports = withPWA(nextConfig) 
-// module.exports = million.next(nextConfig, millionConfig)
+const nextConfig = {
+  reactStrictMode: true,
+}
+module.exports = withPWA(nextConfig)

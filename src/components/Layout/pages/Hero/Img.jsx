@@ -1,4 +1,3 @@
-"use client"
 
 export default function Img({src, k}){
     return <img src={src} alt="" style={{

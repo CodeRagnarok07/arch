@@ -1,0 +1,49 @@
+{
+    "title": "Servicios; Diseño y Desarrollo",
+    "planes": [
+        {
+            "tipo": "Basico",
+            "price": 299,
+            "description": "Ideal para portafolios y landing pages. Creo sitios web elegantes y funcionales que destacan tu marca o proyecto.",
+            "include": [
+                "Diseño web adaptativo para una experiencia de usuario excepcional.",
+                "Creación de páginas de inicio atractiva [Landingpage].",
+                "Optimización para motores de búsqueda (SEO).",
+                "Diseño de páginas de contacto efectivas.",
+                "Gestión de alojamiento web.",
+                "Soporte técnico por hasta 1 mes."
+
+            ]
+        },
+        {
+            "tipo": "Estandar",
+            "price": 499,
+            "description": "Perfecto para menús digitales, blogs y más. Desarrollo soluciones digitales personalizadas para satisfacer tus necesidades específicas.",
+            "include": [
+                "Diseño web adaptativo para una experiencia de usuario excepcional.",
+                "Creación de páginas de inicio atractiva [Landingpage].",
+                "Gestión de dominio y alojamiento web.",
+                "Desarrollo de interactividad con bases de datos.",
+                "Diseño de páginas de contacto efectivas.",
+                "Optimización para motores de búsqueda (SEO).",
+                "Soporte técnico por hasta 2 meses."
+
+            ]
+        },
+        {
+            "tipo": "Pro",
+            "price": 1599,
+            "description": "Para proyectos más grandes como ecommerce, redes sociales, foros, etc. Ofrezco soluciones robustas y escalables que impulsan el crecimiento de tu negocio.",
+            "include": [
+                "Diseño web adaptativo para una experiencia de usuario excepcional.",
+                "Creación de páginas de inicio atractiva [Landingpage].",
+                "Gestión de dominio y alojamiento web.",
+                "Desarrollo de interactividad con bases de datos.",
+                "Diseño de páginas de contacto efectivas.",
+                "Integración de servicios externos como pagos y registros.",
+                "Optimización para motores de búsqueda (SEO).",
+                "Soporte técnico por hasta 6 meses."
+            ]
+        }
+    ]
+}

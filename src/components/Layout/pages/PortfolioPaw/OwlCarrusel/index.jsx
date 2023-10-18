@@ -1,6 +1,5 @@
 "use client"
 import { useEffect, useRef, useState } from 'react'
-import Card from '../Card'
 import styles from './styles.module.scss'
 
 export default function OwlCarrusel() {
@@ -161,10 +160,11 @@ export default function OwlCarrusel() {
 
         <div className="box-shadow-special w-min px-8 mx-auto z-10 relative">
             <div className="selector">
-                <div />
-                <div className="active" />
-                <div />
-                <div />
+            {img_webs.map((v, k) => (
+                <div key={k} className={k == current && "active"} />
+            ))}
+
+                
             </div>
         </div>
 
