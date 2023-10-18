@@ -44,7 +44,6 @@
          }
      }
 
-
      &.bg1 {
          &::after {
              background-image: url('/assets/img/bg/bg1.png');
@@ -54,10 +53,7 @@
      &.bg2 {
          &::after {
              background-image: url("/assets/img/bg/bg2.png");
-             scale: (3);
-             z-index: -1000;
-
-
+             scale: (1.5);
          }
      }
 
