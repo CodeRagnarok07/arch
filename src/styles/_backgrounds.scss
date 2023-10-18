@@ -14,29 +14,32 @@
          background-size: contain;
 
 
-         animation: effect ease-in-out 10s;
+         animation: effect ease ;
          animation-fill-mode: both;
          animation-timeline: --section;
-         animation-delay: 1s;
-         animation-range: 25% cover 75%;
+         animation-range: 45% cover 75%;
 
          @keyframes effect {
 
              0% {
                  opacity: .4;
-                 translate: 0 -25%;
+                 translate: 0 -15%;
+
              }
 
              50% {
                  opacity: .75;
-                 translate: 0 0%;
-                 scale: (1.2);
+                 translate: 0 15%;
+
 
              }
+
              100% {
-                opacity: .4;
-                translate: 0 25%;
-            }
+                 opacity: .4;
+                 translate: 0 -15%;
+
+
+             }
 
          }
      }
@@ -57,6 +60,16 @@
 
          }
      }
+
+     @include brackpoint(v.$sm) {
+         &.bg1 {
+             &::after {
+                 background-size: cover;
+             }
+         }
+     }
+
+     ;
 
 
 

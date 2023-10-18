@@ -16,7 +16,7 @@ export default function Hero() {
                 </svg>
             </div>
             <h1 className="font-lemonmilk uppercase font-light text-[1.7rem] sm:text-[2rem]">
-                <span className="w-full">Diseño Y Desarrollo  Multiplataforma  </span> <br />
+                <span className="w-full">Diseño Y Desarrollo  Multiplataforma  </span> 
             </h1>
         </header>
 
