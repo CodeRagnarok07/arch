@@ -64,6 +64,9 @@ header.header {
         /* 5.44px */
 }
 
+
+
+
 .special1 {
     // color: #000;
     text-shadow: 1px 1px 1px #000000;
@@ -74,22 +77,27 @@ header.header {
 
     background: -webkit-linear-gradient(75deg, #fff 38%, #000 46.79%, #fff 57.64%);
     background-clip: text;
-    -webkit-background-clip: text;
+    // -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    animation: animatedgradient 3s ease alternate infinite;
 
-    @keyframes animatedgradient {
+    animation: effect-special ease-in-out 1s;
+    animation-fill-mode: both;
+    animation-timeline: --section;
+    animation-delay: 1s;
+    // animation-range: 25% cover 75%;
+
+
+    @keyframes effect-special {
         0% {
-            background-position: 0% 50%;
         }
 
-        50% {
-            background-position: 100% 50%;
-        }
-
+      
         100% {
-            background-position: 0% 50%;
+            translate: 0 -40rem;
+            scale: (2);
+
+            // background-position: 0% 50%;
         }
     }
 }

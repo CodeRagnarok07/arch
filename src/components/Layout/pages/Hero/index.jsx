@@ -20,7 +20,7 @@ export default function Hero() {
             </h1>
         </header>
 
-        <Frame />
+        {/* <Frame /> */}
 
 
 

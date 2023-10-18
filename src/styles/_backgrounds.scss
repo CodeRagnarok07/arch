@@ -1,41 +1,72 @@
  /* BACKGROUNDS */
- .bg1 {
 
-
-     background-image: url('/assets/img/bg/bg1.png');
-     background-position-x: center;
-     background-repeat: no-repeat;
-     background-size: contain;
-
-     animation: bounce auto linear 6 alternate;
-     animation-timeline: scroll(root);
-
-     @keyframes bounce {
-         100% {
-             transform: translateY(-50vh);
-         }
-     }
- }
-
- .bg2 {
+ section {
      position: relative;
+     view-timeline-name: --section;
 
      &::after {
          content: "";
-         position: absolute;
          inset: 0;
          z-index: -1;
-         background-image: url("/assets/img/bg/bg2.png");
-         background-position-x: center;
-         background-position-y: center;
+         position: absolute;
+         background-position: center;
          background-repeat: no-repeat;
          background-size: contain;
-         opacity: 0.75;
-         transform: scale(2);
 
 
+         animation: effect ease-in-out 10s;
+         animation-fill-mode: both;
+         animation-timeline: --section;
+         animation-delay: 1s;
+         animation-range: 25% cover 75%;
+
+         @keyframes effect {
+
+             0% {
+                 opacity: .4;
+                 translate: 0 -25%;
+             }
+
+             50% {
+                 opacity: .75;
+                 translate: 0 0%;
+                 scale: (1.2);
+
+             }
+             100% {
+                opacity: .4;
+                translate: 0 25%;
+            }
+
+         }
      }
+
+
+     &.bg1 {
+         &::after {
+             background-image: url('/assets/img/bg/bg1.png');
+         }
+     }
+
+     &.bg2 {
+         &::after {
+             background-image: url("/assets/img/bg/bg2.png");
+             scale: (3);
+             z-index: -1000;
+
+
+         }
+     }
+
+
+
  }
+
+
+
+
+
+
 
  .bg3 {
      position: relative;

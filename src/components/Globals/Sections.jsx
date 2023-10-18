@@ -1,14 +1,12 @@
 
 
-// const desc = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus cumque dolorum neque numquam natus quam"
-
 /**
- * 
  * @param {string} param0 
  * @param {string} param1 
  * @returns 
  */
 export default function Section({ title = "titulo", description, bg = "bg1", children }) {
+
 
     return <section className={" flex flex-col mb-[120px] " + bg}>
 

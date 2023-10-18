@@ -23,6 +23,12 @@ export default function App() {
 
             <main id='home'>
                 <Hero />
+                <PortfolioPaw />
+
+                <Services />
+                <Contact />
+                <Socials />
+
             </main>
 
             <main id='services'>
@@ -38,11 +44,14 @@ export default function App() {
 
             </main>
             <main id='blog'>
+                {/* add blog */}
                 <Skills />
             </main>
 
             <main id='about'>
                 {/* api */}
+                {/* add landing page */}
+                {/* experience */}
             </main>
 
             <main id='contact'>

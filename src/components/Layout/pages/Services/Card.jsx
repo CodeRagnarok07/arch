@@ -1,6 +1,6 @@
 "use client"
-import icon from "/assets/svg/services/icon.svg"
-import arrow from "/assets/svg/services/arrow.svg"
+import icon from "/src/assets/svg/services/icon.svg"
+import arrow from "/src/assets/svg/services/arrow.svg"
 import data from "/src/locale/data/services.json"
 import { useEffect, useRef, useState } from "react";
 
