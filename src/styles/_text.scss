@@ -75,10 +75,10 @@ header.header {
     font-size: 3.5rem;
     line-height: 1;
 
-    background: -webkit-linear-gradient(75deg, #fff 38%, #000 46.79%, #fff 57.64%);
+    background: -webkit-linear-gradient(75deg, #fff 100%, #000 0%, #fff 100%);
     background-clip: text;
     // -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.808);
 
 
     animation: effect-special ease-in-out 1s;

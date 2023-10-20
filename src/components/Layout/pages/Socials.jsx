@@ -13,8 +13,7 @@ export default function Socials() {
             <svg width="100%" height="5" viewBox="0 0 501 3" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M250.376 0.833008L427.153 1.1259L500.376 1.83301L427.153 2.54011L250.376 2.83301L73.5995 2.54011L0.376221 1.83301L73.5995 1.1259L250.376 0.833008Z" fill="white"></path></svg>
             
     
-            <p className="mt-2">
-            Conéctate conmigo en mis redes sociales para estar al día con mis últimos proyectos y publicaciones de blog.
+            <p className="mt-2 font-medium">Sigueme en mis redes sociales para estar al día con mis últimos proyectos y publicaciones. {/*  de blog*/}
             </p>
         </header>
 

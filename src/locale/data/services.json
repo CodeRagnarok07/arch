@@ -4,7 +4,8 @@
         {
             "tipo": "Basico",
             "price": 299,
-            "description": "Ideal para portafolios y landing pages. Creo sitios web elegantes y funcionales que destacan tu marca o proyecto.",
+            "description": "Ideal para portafolios y landing pages.",
+            "description2":"Creo sitios web elegantes y funcionales que destacan tu marca o proyecto.",
             "include": [
                 "Diseño web adaptativo para una experiencia de usuario excepcional.",
                 "Creación de páginas de inicio atractiva [Landingpage].",
@@ -18,7 +19,8 @@
         {
             "tipo": "Estandar",
             "price": 499,
-            "description": "Perfecto para menús digitales, blogs y más. Desarrollo soluciones digitales personalizadas para satisfacer tus necesidades específicas.",
+            "description": "Perfecto para menús digitales, blogs y aplicaciones simples, newsletter.",
+            "description2":"Desarrollo soluciones digitales personalizadas para satisfacer tus necesidades específicas.",
             "include": [
                 "Diseño web adaptativo para una experiencia de usuario excepcional.",
                 "Creación de páginas de inicio atractiva [Landingpage].",
@@ -33,7 +35,8 @@
         {
             "tipo": "Pro",
             "price": 1599,
-            "description": "Para proyectos más grandes como ecommerce, redes sociales, foros, etc. Ofrezco soluciones robustas y escalables que impulsan el crecimiento de tu negocio.",
+            "description": "Para proyectos más grandes como ecommerce, red sociale, foros, plataforma de curso, servicios.",
+            "description2":"Ofrezco soluciones robustas y escalables que impulsan el crecimiento de tu negocio.",
             "include": [
                 "Diseño web adaptativo para una experiencia de usuario excepcional.",
                 "Creación de páginas de inicio atractiva [Landingpage].",
