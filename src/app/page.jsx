@@ -23,8 +23,9 @@ export default function App() {
 
 
             <main id='home'>
+                <AnimationPreview/>
                 <Hero />
-                <PortfolioPaw />
+                {/* <PortfolioPaw /> */}
                 <Services />
                 <Contact />
                 <Socials />
