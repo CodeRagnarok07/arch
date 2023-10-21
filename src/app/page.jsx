@@ -11,6 +11,7 @@ import Services from "/src/components/Layout/pages/Services";
 // import Experience from '/src/components/Layout/pages/Experience';
 import About from '/src/components/Layout/pages/About';
 import FQA from '../components/Layout/pages/FQA';
+import AnimationPreview from '../components/Layout/pages/AnimationPreview';
 
 
 
@@ -22,9 +23,9 @@ export default function App() {
 
 
             <main id='home'>
+                <AnimationPreview/>
                 <Hero />
                 <PortfolioPaw />
-
                 <Services />
                 <Contact />
                 <Socials />
