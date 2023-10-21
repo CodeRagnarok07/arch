@@ -1,7 +1,3 @@
-
-
-
-
 // Bg gradient animate 
 // https://codepen.io/mike-schultz/pen/NgQvGO
 // https://stackoverflow.com/questions/68498857/css-animated-gradient-border-on-a-div
@@ -11,14 +7,33 @@
     color: transparent;
     animation: blurring 3s ease-in forwards;
     -webkit-animation: blurring 3s ease-in forwards;
+
     @keyframes blurring {
-        0%, 100%{text-shadow:  0 0 0px #fff;opacity: 1;}
-        50%  {text-shadow:  0 0 100px #fff; opacity:0;}
+
+        0%,
+        100% {
+            text-shadow: 0 0 0px #fff;
+            opacity: 1;
+        }
+
+        50% {
+            text-shadow: 0 0 100px #fff;
+            opacity: 0;
+        }
     }
-    
+
     @-webkit-keyframes blurring {
-        0%, 100%{text-shadow:  0 0 0px #fff;opacity: 1;}
-        50%  {text-shadow:  0 0 100px #fff; opacity:0;}
+
+        0%,
+        100% {
+            text-shadow: 0 0 0px #fff;
+            opacity: 1;
+        }
+
+        50% {
+            text-shadow: 0 0 100px #fff;
+            opacity: 0;
+        }
     }
 
 }
@@ -26,53 +41,122 @@
 
 // ******************** CAROUSEL'S ********************
 
-.galery-zoom{
+.galery-zoom {
     display: flex;
     height: 60vh;
-    img{
+
+    img {
         width: 0;
         flex-grow: 1;
         object-fit: cover;
-        transition: .5s ease ;
+        transition: .5s ease;
         opacity: 0.8;
         filter: contrast(80%);
 
-        &:hover{
+        &:hover {
             position: relative;
             width: 200px;
             opacity: 1;
             filter: contrast(100%);
             scale: 1.1;
             z-index: 2;
-        }   
+        }
     }
 }
 
-.carrusel{
+.carrusel {
     display: flex;
     overflow-x: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
-    
-    img{
+
+    img {
         scroll-snap-align: start;
         flex-shrink: 0;
     }
-    
+
 }
 
+// view-timeline-name: --section;
+// animation-timeline: --section;
 
-.owl_carrusel{
 
-    
+
+
+
+.owl_carrusel {
+
     display: flex;
     overflow-x: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
-    
-    img{
+    height: 60vh;
+
+    >div {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
         scroll-snap-align: start;
         flex-shrink: 0;
+
+        view-timeline-name: --owlC;
+        view-timeline-axis: x;
+        view-timeline-axis: horizontal;
+
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            inset: 0;
+
+            animation: owlAnimation ease;
+            animation-fill-mode: both;
+            animation-timeline: --owlC;
+            animation-duration: 1s;
+            /* Firefox requires this to apply the animation */
+
+            opacity: 0.5;
+
+            @keyframes owlAnimation {
+
+                0%,
+                100% {
+                    transform: translateX(0%);
+                    scale: (.5);
+                }
+
+                0% {
+                    transform: translateX(-100%);
+                    scale: (.5);
+                }
+
+                50% {
+                    scale: (0.7);
+                    transform: translateX(0%);
+
+                    z-index: 5;
+                    opacity: 1;
+
+                }
+
+                100% {
+                    transform: translateX(100%);
+
+
+                    scale: (.5);
+
+                }
+            }
+
+
+        }
+
+
+
+        // animation-range: 45% cover 75%;
     }
-    
+
 }
