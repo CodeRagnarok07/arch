@@ -126,3 +126,14 @@ header>h1.font-lemonmilk{
     }
 
 }
+
+
+// solo muestra el texto de el numero de lineas establecido con el atribute lines en html
+.truncate-text{
+    --lines: attr(lines)
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(lines);
+
+}
