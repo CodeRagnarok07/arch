@@ -1,6 +1,5 @@
 "use client"
-import icon from "/src/assets/svg/services/icon.svg"
-import arrow from "/src/assets/svg/services/arrow.svg"
+// import Icon from "./Icon.jsx"
 import data from "/src/locale/data/services.json"
 import { useEffect, useRef, useState } from "react";
 
@@ -24,33 +23,33 @@ export default function Card() {
         }
 
 
-        setTimeout(()=>{
+        setTimeout(() => {
             for (let index = 0; index < blurrings.length; index++) {
                 const element = blurrings[index];
                 element.classList.toggle("blurring")
             }
-        },"750")
-     
+        }, "750")
 
-        setTimeout(()=>{
+
+        setTimeout(() => {
             setCurrent(k)
-        },"1500")
+        }, "1500")
 
 
-       
+
     }
 
 
-  
+
 
     return (
         <div className="container w-full ">
 
             <div className="my-auto rounded-lg shadow-sm shadow-white bg-black bg-opacity-90 p-3 relative" >
 
-                <div className="absolute inset-x-0 w-full flex justify-center translate-y-[-70%]">
-                    <img className="" src={icon} alt="" />
-                </div>
+                {/* <div className="absolute inset-x-0 w-full flex justify-center translate-y-[-70%]">
+                    <Icon/>
+                </div> */}
 
                 <div className="border-[#005C94] shadow-none border-2 border-opacity-60 rounded-lg bg-black p-2">
 
@@ -64,7 +63,7 @@ export default function Card() {
 
                         <ul className="flex justify-center gap-2">
                             {[...Array(3).keys()].map((k) => (
-                                <li onClick={(e) =>handleChange(e, k) } key={k} className={"h-2 w-8 rounded-2xl" + ` ${current == k ? "bg-white" : "bg-slate-700"}`} />
+                                <li onClick={(e) => handleChange(e, k)} key={k} className={"h-2 w-8 rounded-2xl" + ` ${current == k ? "bg-white" : "bg-slate-700"}`} />
                             ))}
                         </ul>
 
@@ -76,7 +75,16 @@ export default function Card() {
                             {data.planes[current].include.map((v, k) => (
                                 <li className="flex gap-2 items-center small" key={k}>
                                     <i className="min-w-[1rem] w-4">
-                                        <img src={arrow} alt="" />
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+                                            <g clipPath="url(#clip0_716_1240)">
+                                                <path d="M9 12.2617L12 9.26172M12 9.26172L9 6.26172M12 9.26172H6M16.5 9.26172C16.5 13.4039 13.1421 16.7617 9 16.7617C4.85786 16.7617 1.5 13.4039 1.5 9.26172C1.5 5.11958 4.85786 1.76172 9 1.76172C13.1421 1.76172 16.5 5.11958 16.5 9.26172Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_716_1240">
+                                                    <rect width="18" height="18" fill="white" transform="translate(0 0.261719)" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
                                     </i>
                                     {v}
                                 </li>
@@ -89,8 +97,9 @@ export default function Card() {
 
                     <div className="flex justify-around my-4 sm:my-6">
                         <a href="#contact" className="btn  border-secondary p-2 rounded-[8px]">Contratar</a>
+                        <a href="/gallery" className="btn  border-secondary p-2 rounded-[8px]">Ver Galería</a>
 
-                       
+
                     </div>
 
 

@@ -1,11 +1,13 @@
 
-import Section from "../../Globals/Sections"
+import Section from "/src/components/Globals/Sections"
 
 export default function Contacto() {
-
+    let copis =[
+        "¿Tienes alguna pregunta o proyecto en mente? No dudes en ponerte en contacto conmigo.",
+        "¿Estas preparado? puedes ponerte en contacto conmigo."
+    ]
     return (
-        <Section title="contacto" description="¿Tienes alguna pregunta o proyecto en mente? No dudes en ponerte en contacto conmigo.
-        ">
+        <Section title="contacto" description={copis[1]}>
             <div className="container flex justify-center ">
                 <div className="w-[400px]">
 

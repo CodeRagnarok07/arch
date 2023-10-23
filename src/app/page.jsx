@@ -1,66 +1,74 @@
 import MovilScroll from '/src/components/MovilScroll'
-import Hero from "/src/components/Layout/pages/Hero";
+import NavbarMovil from "/src/components/MovilScroll/NavbarMovil";
 
-import PortfolioPaw from "../components/Layout/pages/PortfolioPaw";
-import PortfolioWeb from "../components/Layout/pages/PortfolioWeb";
 
-import Socials from "/src/components/Layout/pages/Socials";
-import Contact from "/src/components/Layout/pages/Contact";
-import Skills from "/src/components/Layout/pages/Skills";
-import Services from "/src/components/Layout/pages/Services";
-// import Experience from '/src/components/Layout/pages/Experience';
-import About from '/src/components/Layout/pages/About';
-import FQA from '../components/Layout/pages/FQA';
+import Hero from "./_Hero";
+
+import PortfolioPaw from "./portfolio/PWA";
+
+import Socials from "./contact/Social";
+import Contact from "./contact";
+import Skills from "./_Skills";
+import Services from "./services";
+// import Experience from './Experience';
+import FQA from './services/FQA';
+import Politicas from './about/politicas';
+
+
 
 
 
 
 export default function App() {
-    return (
-
-        <MovilScroll>
+    return (<>
 
 
-            <main id='home'>
-                <Hero />
-                <PortfolioPaw />
-
-                <Services />
-                <Contact />
-                <Socials />
-
-            </main>
-
-            <main id='services'>
-                <Services />
-                {/* add landing page */}
-                <FQA />
-
-            </main>
-
-            <main id='portfolio'>
-                <PortfolioPaw />
-                {/* <PortfolioWeb /> */}
-
-            </main>
-            <main id='blog'>
-                {/* add blog */}
-                <Skills />
-            </main>
-
-            <main id='about'>
-                {/* api */}
-                {/* add landing page */}
-                {/* experience */}
-            </main>
-
-            <main id='contact'>
-                {/* que funcione */} <Contact />
-                {/* links */} <Socials />
-            </main>
+            <MovilScroll>
 
 
-            {/* links working */}
-        </MovilScroll>
+                <main id='home'>
+                    <Hero />
+                    <Services />
+                    <Contact />
+                    <Socials />
+
+                </main>
+
+                <main id='services'>
+                    <Services />
+                    <FQA />
+
+                </main>
+
+                <main id='portfolio'>
+                    <PortfolioPaw />
+
+                </main>
+                <main id='blog'>
+                    <Skills />
+                </main>
+
+                <main id='about'>
+                    {/* add landing page */}
+                    {/* experience */}
+                    <FQA />
+
+                    <Politicas/>
+
+                </main>
+
+                <main id='contact'>
+                    <Contact />
+                    <Socials />
+                </main>
+
+
+             
+            </MovilScroll>
+
+            <NavbarMovil />
+
+        </>
     )
+
 }

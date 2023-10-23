@@ -13,8 +13,7 @@
          background-repeat: no-repeat;
          background-size: contain;
 
-
-         animation: effect ease ;
+         animation: effect;
          animation-fill-mode: both;
          animation-timeline: --section;
          animation-range: 45% cover 75%;
@@ -23,7 +22,7 @@
 
              0% {
                  opacity: .4;
-                 translate: 0 -15%;
+                 translate: 0 -25%;
 
              }
 
@@ -31,19 +30,15 @@
                  opacity: .75;
                  translate: 0 15%;
 
-
              }
 
              100% {
                  opacity: .4;
-                 translate: 0 -15%;
-
-
+                 translate: 0 25%;
              }
 
          }
      }
-
 
      &.bg1 {
          &::after {
@@ -54,10 +49,7 @@
      &.bg2 {
          &::after {
              background-image: url("/assets/img/bg/bg2.png");
-             scale: (3);
-             z-index: -1000;
-
-
+             scale: (1.5);
          }
      }
 

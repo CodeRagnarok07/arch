@@ -11,7 +11,7 @@ export default function BtnInstallPwa({ size = 24, color = "#16a34a" }) {
 
 
   const promptToInstall = () => {
-    console.log(isNative);
+    // console.log(isNative);
     if (prompt) {
       return prompt.prompt();
     }
@@ -24,7 +24,7 @@ export default function BtnInstallPwa({ size = 24, color = "#16a34a" }) {
       setPromt(e);
     };
     if (window) {
-      console.log(window.navigator);
+      // console.log(window.navigator);
       if (window.matchMedia('(display-mode: standalone)').matches) {
         // native
         setIsNavite(true)

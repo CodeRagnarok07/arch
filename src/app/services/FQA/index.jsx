@@ -1,4 +1,4 @@
-import Section from "../../Globals/Sections";
+import Section from "/src/components/Globals/Sections";
 import data from '/src/locale/data/FQA.json'
 
 

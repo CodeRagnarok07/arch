@@ -1,8 +1,11 @@
 "use client"
 import { useEffect, useRef, useState } from 'react'
 import styles from './styles.module.scss'
+import Image from 'next/image';
 
-export default function OwlCarrusel() {
+export default function OwlCarrusel({ data }) {
+
+    console.log(data);
 
     const img_webs = [
         "/assets/img/hero/web-1.png",
@@ -47,7 +50,7 @@ export default function OwlCarrusel() {
                 if (k - 1 < 0) {
                     parent.children[parent.children.length - 1]?.classList.add(styles.left)
                 }
-                if (k == parent.children.length - 1) { 
+                if (k == parent.children.length - 1) {
                     parent.children[0]?.classList.add(styles.right)
                 }
 
@@ -145,14 +148,17 @@ export default function OwlCarrusel() {
             // onTouchEnd={(e) => hanldeTouchEnd(e)}
 
             ref={refCarusel} className={styles.carrousel} >
-            {img_webs.map((v, k) => (
-                <li onClick={(e) => handleClick(e, k)} className={styles.item } key={k} >
+            {data.map((v, k) => (
+                <li onClick={(e) => handleClick(e, k)} className={styles.item} key={k} >
 
                     <div className="h-full flex flex-col items-center p-2 rounded-xl border-2 bg-[#000000] border-[#00000060] shadow-md shadow-white">
 
-                        <img className="w-full h-full  rounded-xl object-cover object-center" src={v} alt="" />
-
-                        <div className="text-slate-600">.-.-.-.-.</div>
+                        <Image preload height={"85%"} width={"100"} className="h-[85%] w-full  rounded-xl object-cover object-top hover:object-bottom transition-all duration-[28s] ease-linear" src={v.img_lg[0].file.url} alt="" />
+                        
+                        <div className="text-slate-600 flex flex-col  items-center h-min" >
+                            <span>.-.-.-.-.</span>
+                            <a className='border-primary btn text-center rounded-lg flex justify-center' target='_blank' href={k == current ? v.Live : "#"}>Ver</a>
+                        </div>
                     </div>
                 </li>
             ))}
@@ -160,11 +166,11 @@ export default function OwlCarrusel() {
 
         <div className="box-shadow-special w-min px-8 mx-auto z-10 relative">
             <div className="selector">
-            {img_webs.map((v, k) => (
-                <div key={k} className={k == current && "active"} />
-            ))}
+                {img_webs.map((v, k) => (
+                    <div key={k} className={k == current && "active"} />
+                ))}
 
-                
+
             </div>
         </div>
 

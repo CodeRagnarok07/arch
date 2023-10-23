@@ -75,10 +75,10 @@ header.header {
     font-size: 3.5rem;
     line-height: 1;
 
-    background: -webkit-linear-gradient(75deg, #fff 38%, #000 46.79%, #fff 57.64%);
+    background: -webkit-linear-gradient(75deg, #fff 100%, #000 0%, #fff 100%);
     background-clip: text;
     // -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.808);
 
 
     animation: effect-special ease-in-out 1s;
@@ -125,4 +125,57 @@ header>h1.font-lemonmilk{
         }
     }
 
+}
+
+
+// solo muestra el texto de el numero de lineas establecido con el atribute lines en html
+.truncate-text{
+    --lines: attr(lines)
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(lines);
+
+}
+
+
+.article{
+    background-color: #00000056;
+    padding: .5rem .75rem;
+    border-radius: .5rem;
+
+    color: #FFF;
+    font-family: 'lemonmilk';
+    line-height: normal;
+    font-weight: 300;
+
+    h1,h2,h3,h4,strong{
+        text-decoration: underline;
+        font-weight: 500;
+        margin-bottom: .5rem;
+
+    }
+
+
+    h1{
+        font-size: 1.75rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+
+    h3{
+        font-size: 1rem;
+    }
+    
+    p,li{
+        font-size: .75rem;
+        margin-bottom: .25rem;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
 }

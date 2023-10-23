@@ -1,0 +1,32 @@
+@import "carrusel";
+
+
+.gallery-minimalist{
+    position: relative;
+    display: block;
+    columns: 2;
+    column-gap: .5rem;
+    width: 90%;
+    margin: 0 auto;
+
+    a{
+        display: inline;
+        transition: .5s ease;
+        img{
+        transition: .5s ease;
+
+            width: auto;
+            
+        }
+
+        &:target{
+            img{
+                scale: 2;
+
+            }
+
+            inset: 0;
+        }
+    }
+
+}
