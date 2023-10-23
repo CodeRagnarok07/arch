@@ -1,8 +1,8 @@
 import Section from "/src/components/Globals/Sections"
 import Ring3D from './Ring3D'
-import { socials } from "/src/consts";
+import data from '/src/locale/data/skills.json'
 
-const data = await fetch(process.env.NEXT_PUBLIC_URL + "api/notion/skills").then((res) => res.json())
+// const data = await fetch(process.env.NEXT_PUBLIC_URL + "api/notion/skills").then((res) => res.json())
 
 
 function Skills() {

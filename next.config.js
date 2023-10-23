@@ -37,5 +37,8 @@ const withPWA = require('next-pwa')({
 // }
 const nextConfig = {
   reactStrictMode: true,
+  images: {
+    domains: ['s3.us-west-2.amazonaws.com'],
+  },
 }
 module.exports = withPWA(nextConfig)
