@@ -1,5 +1,5 @@
 
-import Section from "../../Globals/Sections"
+import Section from "/src/components/Globals/Sections"
 
 export default function Contacto() {
     let copis =[

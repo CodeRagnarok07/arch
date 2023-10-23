@@ -97,6 +97,7 @@ export default function Card() {
 
                     <div className="flex justify-around my-4 sm:my-6">
                         <a href="#contact" className="btn  border-secondary p-2 rounded-[8px]">Contratar</a>
+                        <a href="/gallery" className="btn  border-secondary p-2 rounded-[8px]">Ver Galería</a>
 
 
                     </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './styles.module.scss'
 
 import BtnInstallPwa from './BtnInstallPwa'
-import NavbarMovil from "/src/components/Layout/NavbarMovil";
+
 
 /**
  * interface movil to use touch scroll in x and y
@@ -16,7 +16,6 @@ export default function MovilScroll({ children }) {
 
     return <>
         <div className={styles.navigator}><>{children}</></div>
-        <NavbarMovil />
         <BtnInstallPwa />
     </>
 

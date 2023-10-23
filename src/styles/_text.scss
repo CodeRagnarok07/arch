@@ -137,3 +137,45 @@ header>h1.font-lemonmilk{
     -webkit-line-clamp: var(lines);
 
 }
+
+
+.article{
+    background-color: #00000056;
+    padding: .5rem .75rem;
+    border-radius: .5rem;
+
+    color: #FFF;
+    font-family: 'lemonmilk';
+    line-height: normal;
+    font-weight: 300;
+
+    h1,h2,h3,h4,strong{
+        text-decoration: underline;
+        font-weight: 500;
+        margin-bottom: .5rem;
+
+    }
+
+
+    h1{
+        font-size: 1.75rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+
+    h3{
+        font-size: 1rem;
+    }
+    
+    p,li{
+        font-size: .75rem;
+        margin-bottom: .25rem;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+}
