@@ -1,11 +1,10 @@
 "use client"
 import { useRef, useState } from 'react'
 import styles from './styles.module.scss'
-import ImagenLocal from '/src/utils/ImagenLocal'
 
 const MyComponent = ({ data }) => {
 
-    const [current, setCurrent] = useState()
+    const [current, setCurrent] = useState(0)
 
 
     const sliderRef = useRef()
@@ -16,29 +15,30 @@ const MyComponent = ({ data }) => {
     const handleSlider = (bool) => {
         const children = sliderRef.current.children
         if (bool) {
+            if (current == children.length - 1) {
+                setCurrent(0)
+
+            } else {
+                setCurrent(current + 1)
+
+            }
             sliderRef.current.style.transform = `perspective(500px) rotateX(-15deg) rotateY(${CurrentDeg - grados}deg)`
             setCurrentDeg(CurrentDeg - grados)
+
+
+
         } else {
             sliderRef.current.style.transform = `perspective(500px) rotateX(-15deg) rotateY(${CurrentDeg + grados}deg)`
             setCurrentDeg(CurrentDeg + grados)
 
+
+            if (current == 0) {
+                setCurrent(children.length - 1)
+
+            } else {
+                setCurrent(current - 1)
+            }
         }
-
-        if (current === data.length - 1) {
-            setCurrent(0)
-            children[0].children[0].classList.toggle("active")
-
-        } else {
-            setCurrent(current + 1)
-
-            // if(current !== 0){
-            //     children[current-1].children[0].classList.toggle("active")
-            // }
-            // children[current].children[0].classList.toggle("active")
-
-        }
-
-
     }
 
     useState(() => {
@@ -48,8 +48,8 @@ const MyComponent = ({ data }) => {
                 handleSlider(true)
             }, 500)
         }
-        console.log(CurrentDeg);
     }, [sliderRef])
+
 
 
     return <>
@@ -61,8 +61,9 @@ const MyComponent = ({ data }) => {
 
                 <div ref={sliderRef} className={styles.slider_cont} >
                     {data.map((v, k) => (
-                        <i className='bg-black rounded-full' style={{ "--i": k + 1 }} key={k} >
+                        <i className='bg-black rounded-full' style={{ "--i": k }} key={k} >
                             <img className='w-full' src={v.icon} alt="" />
+
                         </i>
                     ))}
 
@@ -85,13 +86,12 @@ const MyComponent = ({ data }) => {
                 </div>
             </div>
         </div>
-        <div className="container text-center">
-
-            <h3 className="font-tourner text-[1.5rem] mb-1 ">Elemento</h3>
-            <div className="box-shadow-special ">
-                <p className="small px-4 py-1">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam quasi nobis dolore similique deserunt corrupti voluptatum,
-                </p>
+        <div className="container text-center relative">
+            <div className='flex justify-center absolute inset-0'>
+                <div className="box-shadow-special  px-4 py-2">
+                    <h3 className="font-tourner text-[1.5rem] mb-1 ">{data[current].name[0].plain_text}</h3>
+                    <p className="small px-4 py-1">{data[current].description && data[current].description[0]?.plain_text}</p>
+                </div>
             </div>
         </div>
 
