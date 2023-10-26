@@ -1,25 +1,14 @@
 "use client"
 import { useEffect, useRef, useState } from 'react'
 import styles from './styles.module.scss'
-import Image from 'next/image';
+// import Image from '/src/components/Globals/Sectionsage';
 
 export default function OwlCarrusel({ data }) {
-
-    console.log(data);
-
-    const img_webs = [
-        "/assets/img/hero/web-1.png",
-        "/assets/img/hero/web-3.png",
-        "/assets/img/hero/web-4.png",
-        "/assets/img/hero/web-2.png",
-        "/assets/img/hero/web-5.png",
-    ]
-
-    const refCarusel = useRef()
-    const carrousel = refCarusel.current
+    const refCarrusel = useRef()
+    const carrousel = refCarrusel.current
     useEffect(() => {
-        if (refCarusel?.current?.children[0]) {
-            const carrousel = refCarusel.current
+        if (refCarrusel?.current?.children[0]) {
+            const carrousel = refCarrusel.current
             carrousel.children[0]?.classList.add(styles.right)
             carrousel.children[1]?.classList.add(styles.main)
             carrousel.children[2]?.classList.add(styles.left)
@@ -42,7 +31,7 @@ export default function OwlCarrusel({ data }) {
 
             setCurrent(k)
 
-            if (refCarusel?.current?.children[0]) {
+            if (refCarrusel?.current?.children[0]) {
                 parent.children[k - 1]?.classList.add(styles.left)
                 parent.children[k]?.classList.add(styles.main)
                 parent.children[k + 1]?.classList.add(styles.right)
@@ -70,7 +59,7 @@ export default function OwlCarrusel({ data }) {
         }
 
 
-        if (refCarusel?.current?.children[0]) {
+        if (refCarrusel?.current?.children[0]) {
 
             if (bool) {
 
@@ -147,13 +136,13 @@ export default function OwlCarrusel({ data }) {
             // onTouchStart={(e) => hanldeTouchstart(e)}
             // onTouchEnd={(e) => hanldeTouchEnd(e)}
 
-            ref={refCarusel} className={styles.carrousel} >
+            ref={refCarrusel} className={styles.carrousel} >
             {data.map((v, k) => (
                 <li onClick={(e) => handleClick(e, k)} className={styles.item} key={k} >
 
                     <div className="h-full flex flex-col items-center p-2 rounded-xl border-2 bg-[#000000] border-[#00000060] shadow-md shadow-white">
 
-                        <Image preload height={"85"} width={"100"} className="h-[85%] w-full  rounded-xl object-cover object-top hover:object-bottom transition-all duration-[28s] ease-linear" src={v.img_lg[0].file.url} alt="" />
+                        <img preload height={"85"} width={"100"} className="h-[85%] w-full  rounded-xl object-cover object-top hover:object-bottom transition-transform duration-[28s] ease-linear" src={v.img_lg[0].file.url} alt="" />
                         
                         <div className="text-slate-600 flex flex-col  items-center h-min" >
                             <span>.-.-.-.-.</span>
@@ -166,7 +155,7 @@ export default function OwlCarrusel({ data }) {
 
         <div className="box-shadow-special w-min px-8 mx-auto z-10 relative">
             <div className="selector">
-                {img_webs.map((v, k) => (
+                {data.map((v, k) => (
                     <div key={k} className={k == current && "active"} />
                 ))}
 

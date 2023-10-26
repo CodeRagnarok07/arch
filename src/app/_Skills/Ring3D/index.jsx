@@ -3,7 +3,7 @@ import { useRef, useState } from 'react'
 import styles from './styles.module.scss'
 
 const MyComponent = ({ data }) => {
-
+    // console.log(data);
     const [current, setCurrent] = useState(0)
 
 
