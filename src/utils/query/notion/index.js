@@ -42,9 +42,7 @@ export const getDbList = async (dbId, query) => {
             const item = v.properties[field][v.properties[field].type]
             element[field] = item            
         }
-        
         if(v.icon) element["icon"] = v?.icon[v.icon.type]?.url 
-        // console.log(v.id);
         element["id"] = v.id
         return element
     });

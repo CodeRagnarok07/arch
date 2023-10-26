@@ -1,1 +1,321 @@
-[{"Area":{"id":"82976200-0241-485b-a1e8-6b31c356316f","name":"Desarrollo","color":"brown"},"Main":true,"public":false,"children":[{"id":"8d877b10-7c19-4d08-9d8f-58e7d22c9ec4"}],"parent":[],"name":[{"type":"text","text":{"content":"Git","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Git","href":null}],"icon":"https://s3.us-west-2.amazonaws.com/secure.notion-static.com/bf9fea96-3c78-440b-828e-d25b8bfb0e8b/git.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231023%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231023T205513Z&X-Amz-Expires=3600&X-Amz-Signature=44a15f4062731eb826fc743f055a5d1e37eb69ab36e9fc48f63f82390c8ee158&X-Amz-SignedHeaders=host&x-id=GetObject","id":"428a7429-5fae-4867-9ad1-a83e19827d7e"},{"Area":{"id":"82976200-0241-485b-a1e8-6b31c356316f","name":"Desarrollo","color":"brown"},"Main":true,"public":false,"children":[{"id":"7729519c-9994-4527-9f59-9a244dcb6931"},{"id":"18886bef-b916-448e-bcc0-3d481d4b0f40"},{"id":"29294ae0-9530-478c-a65b-078bbe6df0d8"},{"id":"31f260e3-38f3-42ee-9776-72408b960285"}],"parent":[],"name":[{"type":"text","text":{"content":"Bases de datos","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Bases de datos","href":null}],"icon":"https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c6e63a96-6ae0-41c5-b0c4-56cfde9edde0/database.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231023%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231023T205513Z&X-Amz-Expires=3600&X-Amz-Signature=199932a280f27863f0ab7ae399ed81fb9b26d9d31e5f0043e82477f9b8f6189a&X-Amz-SignedHeaders=host&x-id=GetObject","id":"9c4bbe13-5729-46e6-a04c-69bce58a3d85"},{"Area":{"id":"82976200-0241-485b-a1e8-6b31c356316f","name":"Desarrollo","color":"brown"},"Main":true,"public":false,"children":[{"id":"7f27f0fb-0406-436a-8d01-3bae4c6c7f8d"}],"parent":[],"name":[{"type":"text","text":{"content":"PHP","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"PHP","href":null}],"icon":"https://s3.us-west-2.amazonaws.com/secure.notion-static.com/5fd08a0f-55c1-4165-bb44-d85d91c5aff4/php.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231023%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231023T205513Z&X-Amz-Expires=3600&X-Amz-Signature=44a2e6d5d1e5633a77b651ace424ed50d98aa3228dbdbd16ebb9400c6098f819&X-Amz-SignedHeaders=host&x-id=GetObject","id":"cfb40550-1f88-44ff-8b7a-6f6f9b936676"},{"Area":{"id":"82976200-0241-485b-a1e8-6b31c356316f","name":"Desarrollo","color":"brown"},"Main":true,"public":false,"children":[],"parent":[{"id":"10abdec4-153a-420d-b519-15e379dc2440"}],"name":[{"type":"text","text":{"content":"Linux","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Linux","href":null}],"icon":"https://s3.us-west-2.amazonaws.com/secure.notion-static.com/debd7aef-ee72-4423-b3b2-a69bdb3802e4/ubuntu.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231023%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231023T205513Z&X-Amz-Expires=3600&X-Amz-Signature=912db161c4a669e357aa71134196a2f8c8f2c101ceff3d5250eb8b88fbb1d901&X-Amz-SignedHeaders=host&x-id=GetObject","id":"c470e5f1-bb85-4445-88c7-fa39b2d17334"},{"Area":{"id":"82976200-0241-485b-a1e8-6b31c356316f","name":"Desarrollo","color":"brown"},"Main":true,"public":false,"children":[{"id":"ac93fc68-0dbe-4132-a85c-dc7bfac51667"}],"parent":[{"id":"10abdec4-153a-420d-b519-15e379dc2440"}],"name":[{"type":"text","text":{"content":"Docker","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Docker","href":null}],"icon":"https://s3.us-west-2.amazonaws.com/secure.notion-static.com/7763b747-9576-470c-b8bb-c5ae1d51a474/docker.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231023%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231023T205513Z&X-Amz-Expires=3600&X-Amz-Signature=d1b640baf5e2e611051285032e858725e6a8f584353d29bd8830ad1f2aa9784c&X-Amz-SignedHeaders=host&x-id=GetObject","id":"ae75ea4e-ae57-45ff-8305-192b1fa2c862"},{"Area":null,"Main":true,"public":false,"children":[{"id":"57013295-6135-4d8d-9976-3a6b85a5c21a"},{"id":"3c5fe779-1dc7-4153-813a-885ba0559225"},{"id":"ac9bafce-e1cb-44ba-afe8-5c8a96988054"}],"parent":[{"id":"af7379a1-6b25-479d-85cd-19fe3f635a78"}],"name":[{"type":"text","text":{"content":"Django","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Django","href":null}],"icon":"https://s3.us-west-2.amazonaws.com/secure.notion-static.com/87e9d65c-cb78-496b-bd64-4b8756e5ebb1/django.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231023%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231023T205513Z&X-Amz-Expires=3600&X-Amz-Signature=d9ec8effa971b576286abed228403f01112f57c6df50026e73bd098b1b8c1fb2&X-Amz-SignedHeaders=host&x-id=GetObject","id":"98068330-7418-4096-93b8-f6eb009ccde5"},{"Area":{"id":"82976200-0241-485b-a1e8-6b31c356316f","name":"Desarrollo","color":"brown"},"Main":true,"public":false,"children":[{"id":"6b92ff9a-5f7a-441b-a622-46b234cd0624"},{"id":"98068330-7418-4096-93b8-f6eb009ccde5"}],"parent":[],"name":[{"type":"text","text":{"content":"Python","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"Python","href":null}],"icon":"https://s3.us-west-2.amazonaws.com/secure.notion-static.com/cab5c09d-8dfc-46a1-b8b8-ad7fc978f98b/python.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231023%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231023T205513Z&X-Amz-Expires=3600&X-Amz-Signature=5449f523a65a02131e72047a9644ea71b41c97830649e9433e24be90a85807bd&X-Amz-SignedHeaders=host&x-id=GetObject","id":"af7379a1-6b25-479d-85cd-19fe3f635a78"},{"Area":{"id":"82976200-0241-485b-a1e8-6b31c356316f","name":"Desarrollo","color":"brown"},"Main":true,"public":false,"children":[{"id":"5c081df6-08d2-48e3-abb8-57b85e0553d0"},{"id":"acad9937-ffec-4262-901c-90d95195c77b"},{"id":"00aacf3e-1f45-475b-be71-1e4fb6f66708"},{"id":"5bc80978-03f7-4af0-9c89-00449dd10144"}],"parent":[],"name":[{"type":"text","text":{"content":"CSS","link":null},"annotations":{"bold":false,"italic":false,"strikethrough":false,"underline":false,"code":false,"color":"default"},"plain_text":"CSS","href":null}],"icon":"https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b1026d57-5b26-43f3-af69-4e383eb9ed82/css3.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231023%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231023T205513Z&X-Amz-Expires=3600&X-Amz-Signature=501e0153321bcee204690a6bf46a380c38f39bb15e42b2aa5483e7b2d750fbf0&X-Amz-SignedHeaders=host&x-id=GetObject","id":"cfb708d7-88cd-4286-82e7-9aa69b8051a4"}]
+[
+    {
+        "Area": {
+            "id": "82976200-0241-485b-a1e8-6b31c356316f",
+            "name": "Desarrollo",
+            "color": "brown"
+        },
+        "Main": true,
+        "public": false,
+        "children": [
+            {
+                "id": "8d877b10-7c19-4d08-9d8f-58e7d22c9ec4"
+            }
+        ],
+        "parent": [],
+        "name": [
+            {
+                "type": "text",
+                "text": {
+                    "content": "Git",
+                    "link": null
+                },
+                "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                },
+                "plain_text": "Git",
+                "href": null
+            }
+        ],
+        "icon": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/bf9fea96-3c78-440b-828e-d25b8bfb0e8b/git.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T013539Z&X-Amz-Expires=3600&X-Amz-Signature=de0a0f915dc510bb97bbd12e24114a37bd361b333aea92691d6bd2f43f62acc7&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "id": "428a7429-5fae-4867-9ad1-a83e19827d7e"
+    },
+    {
+        "Area": {
+            "id": "82976200-0241-485b-a1e8-6b31c356316f",
+            "name": "Desarrollo",
+            "color": "brown"
+        },
+        "Main": true,
+        "public": false,
+        "children": [
+            {
+                "id": "7729519c-9994-4527-9f59-9a244dcb6931"
+            },
+            {
+                "id": "18886bef-b916-448e-bcc0-3d481d4b0f40"
+            },
+            {
+                "id": "29294ae0-9530-478c-a65b-078bbe6df0d8"
+            },
+            {
+                "id": "31f260e3-38f3-42ee-9776-72408b960285"
+            }
+        ],
+        "parent": [],
+        "name": [
+            {
+                "type": "text",
+                "text": {
+                    "content": "Bases de datos",
+                    "link": null
+                },
+                "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                },
+                "plain_text": "Bases de datos",
+                "href": null
+            }
+        ],
+        "icon": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/c6e63a96-6ae0-41c5-b0c4-56cfde9edde0/database.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T013539Z&X-Amz-Expires=3600&X-Amz-Signature=d26887b392d75020fc27e5417b56b0253e62e1d506f85e1919db0148140547d9&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "id": "9c4bbe13-5729-46e6-a04c-69bce58a3d85"
+    },
+    {
+        "Area": {
+            "id": "82976200-0241-485b-a1e8-6b31c356316f",
+            "name": "Desarrollo",
+            "color": "brown"
+        },
+        "Main": true,
+        "public": false,
+        "children": [
+            {
+                "id": "7f27f0fb-0406-436a-8d01-3bae4c6c7f8d"
+            }
+        ],
+        "parent": [],
+        "name": [
+            {
+                "type": "text",
+                "text": {
+                    "content": "PHP",
+                    "link": null
+                },
+                "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                },
+                "plain_text": "PHP",
+                "href": null
+            }
+        ],
+        "icon": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/5fd08a0f-55c1-4165-bb44-d85d91c5aff4/php.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T013539Z&X-Amz-Expires=3600&X-Amz-Signature=634515563f69b92927ea83384954e4978effc03359e45d71807a3223e3fda496&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "id": "cfb40550-1f88-44ff-8b7a-6f6f9b936676"
+    },
+    {
+        "Area": {
+            "id": "82976200-0241-485b-a1e8-6b31c356316f",
+            "name": "Desarrollo",
+            "color": "brown"
+        },
+        "Main": true,
+        "public": false,
+        "children": [],
+        "parent": [
+            {
+                "id": "10abdec4-153a-420d-b519-15e379dc2440"
+            }
+        ],
+        "name": [
+            {
+                "type": "text",
+                "text": {
+                    "content": "Linux",
+                    "link": null
+                },
+                "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                },
+                "plain_text": "Linux",
+                "href": null
+            }
+        ],
+        "icon": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/debd7aef-ee72-4423-b3b2-a69bdb3802e4/ubuntu.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T013539Z&X-Amz-Expires=3600&X-Amz-Signature=202516ab5ae650d5297786d2cc2ce4fcc2fe82b4203830e44d3d3940f436d074&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "id": "c470e5f1-bb85-4445-88c7-fa39b2d17334"
+    },
+    {
+        "Area": {
+            "id": "82976200-0241-485b-a1e8-6b31c356316f",
+            "name": "Desarrollo",
+            "color": "brown"
+        },
+        "Main": true,
+        "public": false,
+        "children": [
+            {
+                "id": "ac93fc68-0dbe-4132-a85c-dc7bfac51667"
+            }
+        ],
+        "parent": [
+            {
+                "id": "10abdec4-153a-420d-b519-15e379dc2440"
+            }
+        ],
+        "name": [
+            {
+                "type": "text",
+                "text": {
+                    "content": "Docker",
+                    "link": null
+                },
+                "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                },
+                "plain_text": "Docker",
+                "href": null
+            }
+        ],
+        "icon": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/7763b747-9576-470c-b8bb-c5ae1d51a474/docker.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T013539Z&X-Amz-Expires=3600&X-Amz-Signature=a7404c8279a48057e3dc997b1123a554fa74c4afd702d4190fbd9745862160cb&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "id": "ae75ea4e-ae57-45ff-8305-192b1fa2c862"
+    },
+    {
+        "Area": null,
+        "Main": true,
+        "public": false,
+        "children": [
+            {
+                "id": "57013295-6135-4d8d-9976-3a6b85a5c21a"
+            },
+            {
+                "id": "3c5fe779-1dc7-4153-813a-885ba0559225"
+            },
+            {
+                "id": "ac9bafce-e1cb-44ba-afe8-5c8a96988054"
+            }
+        ],
+        "parent": [
+            {
+                "id": "af7379a1-6b25-479d-85cd-19fe3f635a78"
+            }
+        ],
+        "name": [
+            {
+                "type": "text",
+                "text": {
+                    "content": "Django",
+                    "link": null
+                },
+                "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                },
+                "plain_text": "Django",
+                "href": null
+            }
+        ],
+        "icon": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/87e9d65c-cb78-496b-bd64-4b8756e5ebb1/django.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T013539Z&X-Amz-Expires=3600&X-Amz-Signature=b53c9e9c0be3ea8042b4acc5b0bf7032278188ee7ce9a32a78e9c5f41b110be3&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "id": "98068330-7418-4096-93b8-f6eb009ccde5"
+    },
+    {
+        "Area": {
+            "id": "82976200-0241-485b-a1e8-6b31c356316f",
+            "name": "Desarrollo",
+            "color": "brown"
+        },
+        "Main": true,
+        "public": false,
+        "children": [
+            {
+                "id": "6b92ff9a-5f7a-441b-a622-46b234cd0624"
+            },
+            {
+                "id": "98068330-7418-4096-93b8-f6eb009ccde5"
+            }
+        ],
+        "parent": [],
+        "name": [
+            {
+                "type": "text",
+                "text": {
+                    "content": "Python",
+                    "link": null
+                },
+                "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                },
+                "plain_text": "Python",
+                "href": null
+            }
+        ],
+        "icon": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/cab5c09d-8dfc-46a1-b8b8-ad7fc978f98b/python.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T013539Z&X-Amz-Expires=3600&X-Amz-Signature=06312b4d7ba80801ecce3863b89bed64b52cc674e4263de57e213bae3ec94d5b&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "id": "af7379a1-6b25-479d-85cd-19fe3f635a78"
+    },
+    {
+        "Area": {
+            "id": "82976200-0241-485b-a1e8-6b31c356316f",
+            "name": "Desarrollo",
+            "color": "brown"
+        },
+        "Main": true,
+        "public": false,
+        "children": [
+            {
+                "id": "5c081df6-08d2-48e3-abb8-57b85e0553d0"
+            },
+            {
+                "id": "acad9937-ffec-4262-901c-90d95195c77b"
+            },
+            {
+                "id": "00aacf3e-1f45-475b-be71-1e4fb6f66708"
+            },
+            {
+                "id": "5bc80978-03f7-4af0-9c89-00449dd10144"
+            }
+        ],
+        "parent": [],
+        "name": [
+            {
+                "type": "text",
+                "text": {
+                    "content": "CSS",
+                    "link": null
+                },
+                "annotations": {
+                    "bold": false,
+                    "italic": false,
+                    "strikethrough": false,
+                    "underline": false,
+                    "code": false,
+                    "color": "default"
+                },
+                "plain_text": "CSS",
+                "href": null
+            }
+        ],
+        "icon": "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b1026d57-5b26-43f3-af69-4e383eb9ed82/css3.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20231026%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20231026T013539Z&X-Amz-Expires=3600&X-Amz-Signature=34f7d63cf14757727a4621fcd849f69f6f57c8ab29fbe131d86bfdf810ccfd22&X-Amz-SignedHeaders=host&x-id=GetObject",
+        "id": "cfb708d7-88cd-4286-82e7-9aa69b8051a4"
+    }
+]

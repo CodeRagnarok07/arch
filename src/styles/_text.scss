@@ -65,67 +65,73 @@ header.header {
 }
 
 
+header{
+    view-timeline-name: --header;
+    view-timeline-axis: y;
+    // view-timeline-axis: horizontal;
+    .special1 {
+        // color: #000;
+        text-shadow: 1px 1px 1px #000000;
+        letter-spacing: .34rem;
+        font-size: 3.5rem;
+        line-height: 1;
+        background: -webkit-linear-gradient(75deg, #fff 100%, #000 0%, #fff 100%);
+        background-clip: text;
 
+        // -webkit-background-clip: text;
+        -webkit-text-fill-color: rgba(255, 255, 255, 0.808);
+        animation: effect-special ease-in-out 1s;
+        animation-fill-mode: both;
+        animation-timeline: --section;
+        // animation-range: 25% cover 250%;
 
-.special1 {
-    // color: #000;
-    text-shadow: 1px 1px 1px #000000;
-
-    letter-spacing: .34rem;
-    font-size: 3.5rem;
-    line-height: 1;
-
-    background: -webkit-linear-gradient(75deg, #fff 100%, #000 0%, #fff 100%);
-    background-clip: text;
-    // -webkit-background-clip: text;
-    -webkit-text-fill-color: rgba(255, 255, 255, 0.808);
-
-
-    animation: effect-special ease-in-out 1s;
-    animation-fill-mode: both;
-    animation-timeline: --section;
-    animation-delay: 1s;
-    // animation-range: 25% cover 75%;
-
-
-    @keyframes effect-special {
-        0% {
-        }
-
-      
-        100% {
-            translate: 0 -40rem;
-            scale: (2);
-
-            // background-position: 0% 50%;
-        }
-    }
-}
-
-header>h1.font-lemonmilk{
-
-    animation: h1-font-lemonmilk ease-in-out 1s;
-    animation-fill-mode: both;
-    animation-timeline: --section;
-    animation-delay: 1s;
-    // animation-range: 25% cover 75%;
-
-
-    @keyframes h1-font-lemonmilk {
-        0% {
-            opacity: 1;
-        }
-
-        25% {
-            opacity: 0;
-        }
-        100% {
-            scale: (2);
-            opacity: 0;
+        @keyframes effect-special {
+            0% {
+                translate: 0 10rem;
+                scale: (1.5);
+            }
+            50% {
+                translate: 0 0;
+                opacity: 1;
+                scale: (1);
+                // background-position: 0% 50%;
+            }
+            100% {
+                translate: 0 -50rem;
+                scale: (1.5);
+                opacity: 0;
+                // background-position: 0% 50%;
+            }
         }
     }
 
+    >h1.font-lemonmilk{
+    
+        animation: h1-font-lemonmilk ease-in-out 1s;
+        animation-fill-mode: both;
+        animation-timeline: --section;
+        animation-delay: 1s;
+        // animation-range: 25% cover 75%;
+    
+    
+        @keyframes h1-font-lemonmilk {
+            0% {
+                opacity: 1;
+            }
+    
+            25% {
+                opacity: 0;
+            }
+            100% {
+                scale: (2);
+                opacity: 0;
+            }
+        }
+    
+    }
 }
+
+
 
 
 // solo muestra el texto de el numero de lineas establecido con el atribute lines en html

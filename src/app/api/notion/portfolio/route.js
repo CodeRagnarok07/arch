@@ -8,6 +8,6 @@ export async function GET(request) {
         //     "checkbox": { "equals": true }
         // }
     }
-    const data = await getDbList(SkillsDB)
+    const data = await getDbList(SkillsDB)    
     return Response.json(data)
 }

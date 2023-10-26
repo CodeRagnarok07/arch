@@ -52,6 +52,12 @@
              scale: (1.5);
          }
      }
+     &.bg3 {
+        &::after {
+            background-image: url("/assets/img/bg/bg3.png");
+            scale: (1.5);
+        }
+    }
 
      @include brackpoint(v.$sm) {
          &.bg1 {
@@ -73,30 +79,3 @@
 
 
 
- .bg3 {
-     position: relative;
-
-     &::after {
-         content: "";
-         position: absolute;
-         inset: 0;
-         z-index: -1;
-         background-image: url("/assets/img/bg/bg3.png");
-         background-position-x: center;
-         background-position-y: center;
-         opacity: 0.5;
-         background-repeat: no-repeat;
-         background-size: contain;
-         transform: scale(1.5);
-     }
- }
-
-
-
- @media (min-width:650px) {
-     .bg1 {
-         background-size: cover;
-
-     }
-
- }
