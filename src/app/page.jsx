@@ -45,7 +45,7 @@ export default function App() {
 
                 </main>
                 <main id='blog'>
-                    <Skills />
+                    {/* <Skills /> */}
                 </main>
 
                 <main id='about'>

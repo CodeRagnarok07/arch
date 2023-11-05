@@ -142,7 +142,11 @@ export default function OwlCarrusel({ data }) {
 
                     <div className="h-full flex flex-col items-center p-2 rounded-xl border-2 bg-[#000000] border-[#00000060] shadow-md shadow-white">
 
-                        <img preload height={"85"} width={"100"} className="h-[85%] w-full  rounded-xl object-cover object-top hover:object-bottom transition-transform duration-[28s] ease-linear" src={v.img_lg[0].file.url} alt="" />
+                        <img preload height={"85"} width={"100"} className="h-[85%] w-full  rounded-xl object-cover object-top hover:object-bottom transition-transform duration-[28s] ease-linear" 
+                        
+                        // src={v.img_lg[0].file.url} 
+                        src={`/assets/img/portfolio/${v.img}`} 
+                        alt="" />
                         
                         <div className="text-slate-600 flex flex-col  items-center h-min" >
                             <span>.-.-.-.-.</span>
