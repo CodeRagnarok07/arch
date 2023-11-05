@@ -6,7 +6,7 @@ export const myData = {
     app_name: "Portafolio-Angel",
     author: "Angel Felipe",
     app_short_name: "ARCH-portfolio",
-    description: "soe grothemarketign",
+    description: "",
     keywords: ["developer", "webdesing", "web", "UX/UI", "growth haker"],
     url : process.env.NEXT_PUBLIC_URL
 }
