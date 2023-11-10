@@ -40,9 +40,8 @@ export default function Card() {
     }
 
     const message = `
-    hola angel estoy interesado en contratar el plan ${data.planes[current].tipo}
-
-    por un costo de ${data.planes[current].price}
+    hola angel estoy interesado en contratar el plan *${data.planes[current].tipo}* \n
+    por un costo de $*${data.planes[current].price}*
     `
 
 
