@@ -39,6 +39,12 @@ export default function Card() {
 
     }
 
+    const message = `
+    hola angel estoy interesado en contratar el plan ${data.planes[current].tipo}
+
+    por un costo de ${data.planes[current].price}
+    `
+
 
 
 
@@ -96,7 +102,11 @@ export default function Card() {
                     </div>
 
                     <div className="flex justify-around my-4 sm:my-6">
-                        <a href="https://api.whatsapp.com/send/?phone=%2B584126866045&text='hola angel como estas?'&type=phone_number&app_absent=0" className="btn  border-secondary p-2 rounded-[8px]">Contratar</a>
+                        
+                        <a href={`https://api.whatsapp.com/send/?phone=%2B584126866045&text=${message}&type=phone_number&app_absent=0`}
+                        
+                        
+                        className="btn  border-secondary p-2 rounded-[8px]">Contratar</a>
                         <a href="/gallery" className="btn  border-secondary p-2 rounded-[8px]">Ver Galería</a>
 
 

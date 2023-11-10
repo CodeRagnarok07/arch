@@ -15,7 +15,13 @@
   - [x] zoom
 
 
+
+
+
 - [ ] Contacto working
+  - [ ]   Si es movil que el contacto sea a ws
+  - [ ]   si es desktop que el contacto sea a Correo
+- [ ]   Corregir Vista de Desktop
 - [ ] SEO
   - [ ] imagens
     - [ ] blur
