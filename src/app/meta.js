@@ -3,10 +3,10 @@ import { headers } from 'next/headers';
 
 
 export const myData = {
-    app_name: "Portafolio-Angel",
+    app_name: "ARCH.DV",
     author: "Angel Felipe",
-    app_short_name: "ARCH-portfolio",
-    description: "",
+    app_short_name: "ARCH.DV",
+    description: "Soy desarrollador UX con experiencia en marketing digital, devops, diseño UX y UI, y posicionamiento SEO. Puedo crear proyectos enteros, rápidos, seguros, atractivos y rentables, que te ayuden a alcanzar tus objetivos y a destacar en tu sector.",
     keywords: ["developer", "webdesing", "web", "UX/UI", "growth haker"],
     url : process.env.NEXT_PUBLIC_URL
 }
@@ -31,11 +31,16 @@ export const meta = {
     creator: myData.author,
     publisher: myData.author,
 
-    colorScheme: 'dark',
-    themeColor: [
-        { media: '(prefers-color-scheme: light)', color: 'cyan' },
-        { media: '(prefers-color-scheme: dark)', color: 'black' },
-    ],
+    // colorScheme: 'dark',
+    // themeColor: [
+    //     { media: '(prefers-color-scheme: light)', color: 'cyan' },
+    //     { media: '(prefers-color-scheme: dark)', color: 'black' },
+    // ],
+    // viewport: {
+    //     width: 'device-width',
+    //     initialScale: 1,
+    //     maximumScale: 1,
+    // },
 
     formatDetection: {
         email: false,
@@ -93,11 +98,7 @@ export const meta = {
         },
 
     },
-    viewport: {
-        width: 'device-width',
-        initialScale: 1,
-        maximumScale: 1,
-    },
+  
     verification: {
         google: 'google',
         yandex: 'yandex',

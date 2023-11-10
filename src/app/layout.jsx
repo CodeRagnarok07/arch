@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
       </head>
 
 
-      <body className={`bg-[#030713] text-white ${tourner.variable} ${lemonmilk.variable}`}>
+      <body className={`bg-[#030713] text-white ${tourner.variable} ${lemonmilk.variable} antialiased`}>
             {children}
       </body>
 
