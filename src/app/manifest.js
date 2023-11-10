@@ -13,25 +13,25 @@ export default function manifest() {
     theme_color: '#000',
     icons: [
       {
-        "src": "/icons/icon-144x144.svg",
+        "src": "/icons/icon-144x144.png",
         "sizes": "144x144",
-        "type": "image/svg"
+        "type": "image/png"
       },
       {
-        "src": "/icons/icon-192x192.svg",
+        "src": "/icons/icon-192x192.png",
         "sizes": "192x192",
-        "type": "image/svg",
+        "type": "image/png",
         "purpose": "any maskable"
       },
       {
-        "src": "/icons/icon-384x384.svg",
+        "src": "/icons/icon-384x384.png",
         "sizes": "384x384",
-        "type": "image/svg"
+        "type": "image/png"
       },
       {
-        "src": "/icons/icon-512x512.svg",
+        "src": "/icons/icon-512x512.png",
         "sizes": "512x512",
-        "type": "image/svg"
+        "type": "image/png"
       }
     ],
   }

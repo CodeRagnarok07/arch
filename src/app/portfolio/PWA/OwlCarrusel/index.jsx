@@ -150,7 +150,7 @@ export default function OwlCarrusel({ data }) {
                         
                         <div className="text-slate-600 flex flex-col  items-center h-min" >
                             <span>.-.-.-.-.</span>
-                            <a className='border-primary btn text-center rounded-lg flex justify-center' target='_blank' href={k == current ? v.Live : "#"}>Ver</a>
+                            <a className='border-primary btn text-center rounded-lg flex justify-center' target='_blank' href={v.Live}>Ver</a>
                         </div>
                     </div>
                 </li>

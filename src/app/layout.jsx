@@ -3,7 +3,7 @@ import '/src/styles/tailwind.css'
 
 // fonts
 import { tourner, lemonmilk } from '/src/assets/fonts'
-import {meta} from './meta'
+import { meta } from './meta'
 // Metadata
 
 // export const metadata = {
@@ -11,7 +11,18 @@ import {meta} from './meta'
 //   description: 'Portfolio desarrollador y diseñador web grothHaker',
 // }
 
+export const viewport = {
+  themeColor: 'black',
 
+  colorScheme: 'dark',
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: 'cyan' },
+    { media: '(prefers-color-scheme: dark)', color: 'black' },
+  ],
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+}
 
 export const metadata = meta
 
@@ -30,7 +41,7 @@ export default function RootLayout({ children }) {
 
 
       <body className={`bg-[#030713] text-white ${tourner.variable} ${lemonmilk.variable} antialiased`}>
-            {children}
+        {children}
       </body>
 
     </html>

@@ -33,16 +33,7 @@ export const meta = {
     creator: myData.author,
     publisher: myData.author,
 
-    // colorScheme: 'dark',
-    // themeColor: [
-    //     { media: '(prefers-color-scheme: light)', color: 'cyan' },
-    //     { media: '(prefers-color-scheme: dark)', color: 'black' },
-    // ],
-    // viewport: {
-    //     width: 'device-width',
-    //     initialScale: 1,
-    //     maximumScale: 1,
-    // },
+   
 
     formatDetection: {
         email: false,
