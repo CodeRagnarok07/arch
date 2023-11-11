@@ -10,8 +10,9 @@ const url = process.env.NEXT_PUBLIC_URL + "api/notion/portfolio"
 
 export default async function PAW() {
     // const data = await fetch(url, { cache: 'no-store' }).then((res) => res.json())
+    // Descubre cómo llevar tu negocio siguiente nivel con las aplicaciones móviles.
 
-    return <Section bg="bg2" title="Portafolio PAW" description="Portafolio de Aplicaciones Móviles: Descubre cómo llevar la movilidad al siguiente nivel de las aplicaciones móviles.">
+    return <Section bg="bg2" title="Portafolio PAW" description="Portafolio de Aplicaciones">
         <OwlCarrusel data={data} />
 
     </Section>
