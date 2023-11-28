@@ -1,0 +1,12 @@
+VITE_DEV=True
+NEXT_PUBLIC_DEV=True
+
+
+NEXT_PUBLIC_URL="http://localhost:3000/"
+
+
+
+NEXT_NOTION_TOKEN="secret_"
+NEXT_ARTICLES_DB_ID="secret_"
+NEXT_PORTFOLIO_DB_ID="secret_"
+NEXT_EXPERIENCE_DB_ID="secret_"

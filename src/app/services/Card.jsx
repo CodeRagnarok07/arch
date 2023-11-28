@@ -44,6 +44,7 @@ export default function Card() {
     por un costo de $*${data.planes[current].price}*
     `
 
+    const numero = 4264972551
 
 
 
@@ -102,7 +103,7 @@ export default function Card() {
 
                     <div className="flex justify-around my-4 sm:my-6">
                         
-                        <a href={`https://api.whatsapp.com/send/?phone=%2B584126866045&text=${message}&type=phone_number&app_absent=0`}
+                        <a href={`https://api.whatsapp.com/send/?phone=%2B58${numero}&text=${message}&type=phone_number&app_absent=0`}
                         
                         
                         className="btn  border-secondary p-2 rounded-[8px]">Contratar</a>
